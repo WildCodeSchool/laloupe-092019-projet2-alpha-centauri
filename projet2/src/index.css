@@ -1,8 +1,10 @@
+
 * {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
- }
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -16,12 +18,77 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-/*
-body{
-  font-family: 'Play', sans-serif;
-  font-family: 'Turret Road', cursive;
+
+ 
+/*Patrice Navbar*/
+.row{
+  display: flex;
+  
 }
-*/
+
+.flex1{
+flex:1;
+}
+
+  .liststyle{
+    list-style-type: none;
+
+  }
+
+  .line{
+    
+    color: rgb(80, 251, 209);
+    height: 4px;
+    background-color: rgb(80, 251, 209);
+    width: 100%;
+    
+  }
+
+  .justify-content{
+    justify-content: flex-end;
+  }
+
+  .line2{
+    color: rgb(80, 251, 209);
+    height: 4px;
+    background-color: rgb(80, 251, 209);
+    transform: rotate(60deg);
+    width: 120px;
+    
+  }
+  .line3{
+    color: rgb(80, 251, 209);
+    width: 120px;
+    height: 4px;
+    background-color: rgb(80, 251, 209);
+    transform: rotate(60deg);
+    margin-left: 15px;
+  }
+  .columns{
+    align-items: center;
+  }
+
+  .height{
+    height: auto;
+  }
+
+  .nav-height{
+    height: 100px;
+  }
+
+  .text-deco-none{
+    text-decoration: none;
+  }
+
+  .font-color{
+    color: rgb(112, 236, 205);
+  }
+  .none{
+    background-color: none;
+  }
+  .background{
+    background-image: url(https://wallpapercave.com/wp/jnmJ9pp.jpg);
+  }
 
 /*jane footer*/
 .footer{
@@ -45,7 +112,10 @@ body{
   padding-top:15px;
   padding-right: 10px;
 }
-@media screen and (min-width: 540px) and (max-width: 719px) {
+
+
+
+@media screen and (max-width: 540px) {
   .mob-0 {display: none;}
   .mob-1{width:8.33%;}
   .mob-2{width:16.66%;}
@@ -60,7 +130,8 @@ body{
   .mob-11{width:91.66%;}
   .mob-12{width:100%;}
  }
- @media screen and (max-width: 360px){
+
+ @media screen and (max-width: 540px){
   .mob-offset-0{display:none}
   .mob-offset-1{margin:8.30%}
   .mob-offset-2{margin:16.6%}
@@ -75,8 +146,10 @@ body{
   .mob-offset-11{margin:91.6%}
   .mob-offset-12{margin:100%}
 }
- 
- @media screen and (min-width: 720px) and (max-width: 959px){
+
+
+@media screen and (min-width: 541px) and (max-width: 720px){
+
   .tab-0 {display: none;}
   .tab-1{width:8.33%;}
   .tab-2{width:16.66%;}
@@ -90,8 +163,9 @@ body{
   .tab-10{width:83.33%;}
   .tab-11{width:91.66%;}
   .tab-12{width:100%;}
+
  }
- @media screen and (max-width: 360px){
+ @media screen and (min-width: 541px) and (max-width: 720px){
   .tab-offset-0{display:none}
   .tab-offset-1{margin:8.30%}
   .tab-offset-2{margin:16.6%}
@@ -106,7 +180,7 @@ body{
   .tab-offset-11{margin:91.6%}
   .tab-offset-12{margin:100%}
 }
- @media screen and (min-width: 960px) {
+ @media screen and (min-width: 721px) {
   .dsk-0 {display: none;}
    .dsk-1{width:8.33%;}
    .dsk-2{width:16.66%;}
@@ -121,7 +195,7 @@ body{
    .dsk-11{width:91.66%;}
    .dsk-12{width:100%;}
  }
- @media screen and (max-width: 360px){
+ @media screen and (min-width: 721px){
   .dsk-offset-0{display:none}
   .dsk-offset-1{margin:8.30%}
   .dsk-offset-2{margin:16.6%}
@@ -136,6 +210,8 @@ body{
   .dsk-offset-11{margin:91.6%}
   .dsk-offset-12{margin:100%}
 }
+  
+  
 .full-width{
   display: flex;
   flex-direction: row;
@@ -146,3 +222,12 @@ body{
   flex-direction: column;
   flex-wrap: wrap;
 }
+
+
+
+
+
+
+
+
+
