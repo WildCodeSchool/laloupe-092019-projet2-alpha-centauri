@@ -1,8 +1,10 @@
+
 * {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
 }
+
 
 body {
   margin: 0;
@@ -17,8 +19,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-
 
 .row{
   display: flex;
@@ -151,3 +151,4 @@ flex:1;
 
 
 }
+
