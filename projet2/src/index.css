@@ -95,7 +95,8 @@ flex:1;
   position: fixed;
   width: 100%;
   bottom: 0;
-  height: 80px;
+  height: auto;
+
   background-color: black;
   color: rgb(80, 251 ,209);
   
@@ -106,7 +107,10 @@ flex:1;
   
 }
 .help{  
-  padding-left: 5%;  
+  padding-left: 2%;  
+}
+.myAccount{
+  padding-right: 15px;
 }
 .social i{
   padding-top:15px;
