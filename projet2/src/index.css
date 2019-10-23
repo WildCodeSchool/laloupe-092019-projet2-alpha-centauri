@@ -91,32 +91,6 @@ flex:1;
   }
 
 /*jane footer*/
-.footer{
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  height: auto;
-
-  background-color: black;
-  color: rgb(80, 251 ,209);
-  
-}
-.row{
-  display: flex;
-  flex-direction: row;
-  
-}
-.help{  
-  padding-left: 2%;  
-}
-.myAccount{
-  padding-right: 15px;
-}
-.social i{
-  padding-top:15px;
-  padding-right: 10px;
-}
-
 
 
 @media screen and (max-width: 540px) {
