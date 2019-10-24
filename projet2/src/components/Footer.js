@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
-
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {Link} from 'react-router-dom';
+import About from './About'
 import './Footer.css';
 
 
@@ -10,6 +12,8 @@ class Footer extends Component{
     }
     render(){
         return(
+
+      <Router>
     <div>
     <footer class="footer">
     <div class="row">
@@ -24,7 +28,7 @@ class Footer extends Component{
         <p>Order status</p>
       </div>
       <div class="aboutUs dsk-3 tab-6 mob-6">
-        <h4>About us</h4>
+      <Link to="/About"><h4>About us</h4></Link>
         <p>Company</p>
         <p>Support</p>
       </div>
@@ -36,7 +40,15 @@ class Footer extends Component{
       </div>
     </div>
   </footer>
-  </div>
+
+
+        <Switch>
+          <Route path="/About">
+            <About />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
         )
     }
 }

@@ -6,6 +6,7 @@
   
     background-color: black;
     color: rgb(80, 251 ,209);
+    z-index : 10;
     
   }
   .row{

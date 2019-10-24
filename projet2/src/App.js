@@ -1,20 +1,21 @@
 import React from 'react';
 import Intro from './components/Intro';
-import About from './components/About'
-
-
 import Navbar from './components/Navbar';
-
 import Footer from './components/Footer'
-
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 function App() {
   return (
+    <Router>
     <div>
     <Navbar/>
-    <Intro/>
+    <Route path="/" exact component={Intro}/>
     <Footer/>
     </div>
+
+
+    </Router>
     );
   }
   
