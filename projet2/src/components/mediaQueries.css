@@ -13,6 +13,16 @@
     .mob-11{width:91.66%;}
     .mob-12{width:100%;}
 
+
+    .zoom-large.view-2D .scale-stretched #solar-system {
+      font-size: 66%;
+  }
+
+  #universe{
+    height: 85%
+  }
+
+
 }
 
 @media screen and (max-width: 540px){
@@ -47,6 +57,14 @@
     .tab-11{width:91.66%;}
     .tab-12{width:100%;}
 
+    .zoom-large.view-2D .scale-stretched #solar-system {
+      font-size: 62%;
+  }
+
+  #universe{
+    height: 85%
+  }
+
   }
 
 
@@ -79,6 +97,16 @@
     .dsk-10{width:83.33%;}
     .dsk-11{width:91.66%;}
     .dsk-12{width:100%;}
+
+    .zoom-large.view-2D .scale-stretched #solar-system {
+      font-size: 27%;
+  }
+
+  #universe{
+    height: 82%
+  }
+
+
   }
   @media screen and (min-width: 721px){
     .dsk-offset-0{display:none}
