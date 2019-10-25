@@ -1,11 +1,10 @@
 import React from 'react';
-import Intro from './components/Intro';
-import About from './components/About'
-
-
 import Navbar from './components/Navbar';
-
+import Intro from './components/Intro';
+import SolarSystem from './components/SolarSystem';
 import Footer from './components/Footer'
+import About from './components/About';
+
 
 
 function App() {
@@ -13,6 +12,7 @@ function App() {
     <div>
     <Navbar/>
     <Intro/>
+    <SolarSystem/>
     <Footer/>
     </div>
     );
