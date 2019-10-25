@@ -28,8 +28,8 @@ class Footer extends Component{
         <p>Order status</p>
       </div>
       <div class="aboutUs dsk-3 tab-6 mob-6">
-      <Link to="/About"><h4>About us</h4></Link>
-        <p>Company</p>
+      <h4>About us</h4>
+      <Link to="/About"><p>Company</p></Link>
         <p>Support</p>
       </div>
       <div class="social dsk-3 tab-6 mob-6">
