@@ -19,12 +19,12 @@ class Navbar extends Component {
             
             <nav class=" row nav-height z-index height dsk-12 tab-12 mob-12">
             
-            <div class="dsk-2 tab-0 mob-0 ">
-            <img class="nav-height none dsk-10"
+            <div class="dsk-2 tab-4 mob-4 ">
+            <img class="nav-height  dsk-10"
             src="https://files.slack.com/files-pri/T6SG2QGG2-FPK091NRL/logo_transparent.png" />
             </div>
             
-            <div class="row navigation z-index order dsk-9">
+            <div class="row navigation z-index order dsk-9 ">
             
             <input class="dsk-0" type="checkbox" name=""/>
             
