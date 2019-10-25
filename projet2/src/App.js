@@ -1,20 +1,29 @@
 import React from 'react';
-import Navbar from './components/Navbar';
+
 import Intro from './components/Intro';
-import SolarSystem from './components/SolarSystem';
+import Navbar from './components/Navbar';
 import Footer from './components/Footer'
-import About from './components/About';
+import SolarSystem from './components/SolarSystem';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {Link} from 'react-router-dom';
+
+
+
 
 
 
 function App() {
   return (
+    <Router>
     <div>
     <Navbar/>
-    <Intro/>
-    <SolarSystem/>
+    <Route path="/" exact component={Intro}/>
+    <Route path="/" exact component={SolarSystem}/>
     <Footer/>
     </div>
+
+
+    </Router>
     );
   }
   

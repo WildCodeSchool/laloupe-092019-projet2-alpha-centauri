@@ -87,7 +87,7 @@
   .talig{text-align: center}
   
   .image_resize{
-    height: 100%;
+    height: auto;
     width: 100%;
   }
   
@@ -111,15 +111,14 @@
     
     /*Composant About*/
 
-    .neonTitle{
-      font-size: 2em;
-    }
+    .neonTitle{font-size: 2em;}
     .row_mob{display: flex; flex-direction: row; flex-wrap: wrap}
-    .row_col{display: flex; flex-direction: column}
+    .col_mob{display: flex; flex-direction: column}
     .divspace{margin-bottom: 18%}
-
     .neonTitlered{font-size: 1em; }
     .text_about{font-size: 0.8em; }
+
+
   }
   
   
@@ -157,13 +156,16 @@
     .tab-11{width:91.66%;}
     .tab-12{width:100%;}
     
-    .neonTitle{
-      font-size: 3em;
-    }
-    
+    .neonTitle{font-size: 3em;}
+    .tab-col{flex-direction: column}
+    .tab-row{flex-direction: row}
+    .m-top0{margin-top: 5%; margin-bottom:5%}
     .neonTitlered{font-size: 1em; }
     .text_about{font-size: 0.8em; }
     .divspace{margin-bottom: 18%}
+
+
+
   }
   @media screen and (min-width: 541px) and (max-width: 720px){
     .tab-offset-0{display:none}
@@ -194,6 +196,8 @@
     .dsk-10{width:83.33%;}
     .dsk-11{width:91.66%;}
     .dsk-12{width:100%;}
+
+    .row_desk{display:flex; flex-direction: row}
   }
   @media screen and (min-width: 721px){
     .dsk-offset-0{display:none}
