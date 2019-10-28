@@ -25,13 +25,10 @@ class Navbar extends Component {
             </div>
             
             <div class="row navigation z-index order dsk-9 ">
-            
-            <input class="dsk-0" type="checkbox" name=""/>
-            
-            <span></span>
-            
-            <span></span>
-            
+
+            <input id="menu-checkbox" type="checkbox" class="menu-checkbox"/>
+            <label for="menu-checkbox" class="menu-toggle">&equiv; </label>
+
             <ul class="row columns liststyle z-index menu dsk-12 tab-0 mob-0 ">
             
             <li class="dsk-2 tab-0 mob-0">
