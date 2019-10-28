@@ -1,0 +1,30 @@
+#title {
+    text-align: flex-start;
+    font-family: arial, sans-serif;
+    color: white;
+    padding-left: 10%;
+  }
+  
+  #planets {
+    display: flex;
+    align-content: center;
+    text-align: center;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border: 3px solid #ddd;
+    width: 50%;
+    color: white;
+  }
+#planets tr:hover {opacity: .5;}
+
+#planets td, #planets th {
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+#planets th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+}

@@ -1,0 +1,11 @@
+label{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding: 5px;
+  border-radius: 10px;
+  color: wheat;
+
+}
+
+
