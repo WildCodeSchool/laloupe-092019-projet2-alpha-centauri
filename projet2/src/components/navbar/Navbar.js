@@ -63,6 +63,7 @@ const NavBar = styled(animated.nav)`
   background: #2d3436;
   z-index: 1;
   font-size: 1.4rem;
+  
 `;
 
 const FlexContainer = styled.div`
@@ -72,6 +73,7 @@ const FlexContainer = styled.div`
   padding: 0 2rem;;
   justify-content: space-between;
   height: 5rem;
+  height: 77px;
 `;
 
 const NavLinks = styled(animated.ul)`
@@ -79,7 +81,7 @@ const NavLinks = styled(animated.ul)`
   list-style-type: none;
   margin: auto 0;
   
-  & a {
+   & a {
     color: #dfe6e9;
     text-transform: uppercase;
     font-weight: 600;

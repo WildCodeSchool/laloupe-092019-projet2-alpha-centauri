@@ -1,3 +1,6 @@
+
+
+
 @media screen and (max-width: 540px) {
     .mob-0 {display: none;}
     .mob-1{width:8.33%;}
@@ -14,13 +17,7 @@
     .mob-12{width:100%;}
 
 
-    .zoom-large.view-2D .scale-stretched #solar-system {
-      font-size: 66%;
-  }
-
-  #universe{
-    height: 85%
-  }
+   
 
 
 }
@@ -57,13 +54,7 @@
     .tab-11{width:91.66%;}
     .tab-12{width:100%;}
 
-    .zoom-large.view-2D .scale-stretched #solar-system {
-      font-size: 62%;
-  }
-
-  #universe{
-    height: 85%
-  }
+  
 
   }
 
@@ -98,13 +89,6 @@
     .dsk-11{width:91.66%;}
     .dsk-12{width:100%;}
 
-    .zoom-large.view-2D .scale-stretched #solar-system {
-      font-size: 27%;
-  }
-
-  #universe{
-    height: 82%
-  }
 
   .new-width{
     width: 75%;

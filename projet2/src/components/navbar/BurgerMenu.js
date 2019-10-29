@@ -20,9 +20,10 @@ const Wrapper = styled.div`
   padding-top: .7rem;
   cursor: pointer;
   display: block;
+  
 
   & span {
-    background: #fdcb6e;
+    background: aqua;
     display: block;
     position: relative;
     width: 3.5rem;

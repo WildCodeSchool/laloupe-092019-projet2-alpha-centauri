@@ -62,7 +62,8 @@
 }
 
 #universe{
-  height: 85%
+  height: 85%;
+  margin-top: 78px;
 }
 
 }
@@ -103,7 +104,8 @@
 }
 
 #universe{
-  height: 82%
+  height: 82%;
+  margin-top: 78px;
 }
 
 .new-width{
