@@ -1,9 +1,8 @@
 .footer{
-    position: fixed;
+    position: relative;
     width: 100%;
-    bottom: 0;
-    height: auto;
-  
+
+    height: 50px;  
     background-color: black;
     color: rgb(80, 251 ,209);
     z-index : 10;
@@ -24,5 +23,7 @@
     padding-top:15px;
     padding-right: 10px;
   }
-  
+  li{
+    list-style-type: none;
+  }
   

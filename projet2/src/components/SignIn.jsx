@@ -1,5 +1,5 @@
 import React from 'react';
-import './contactForm.css';
+import './signIn.css';
 
 class Contact_Form extends React.Component{
   constructor(props){
@@ -21,7 +21,7 @@ class Contact_Form extends React.Component{
   }
   render(){
     return(
-      <div>
+      <div className ="container_form">
         <h3>Contact Form</h3>
       <form className = "Contact_Form" onSubmit={event => event.preventDefault()}>
         <label>Firstname
