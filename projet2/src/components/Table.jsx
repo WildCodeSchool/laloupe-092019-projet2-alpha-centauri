@@ -51,7 +51,7 @@ class Table extends Component {
                     <td>number travellers</td>
                     <td>number of weeks</td>
                     <td>Planets</td>
-                    <td>more than 10 travellers</td>
+                    <td>groups >10 travellers</td>
                     <td>Price per week</td>
                 </th>           
                 
@@ -60,7 +60,9 @@ class Table extends Component {
                 </tr>
                 </tbody>
                 </table>
-                <button class="dsk-offset-10">Confirm</button>
+                <a href="./Payment">
+                <button class="dsk-offset-10" type="submit">Confirm</button>
+                </a>
             </div>
         )
     }

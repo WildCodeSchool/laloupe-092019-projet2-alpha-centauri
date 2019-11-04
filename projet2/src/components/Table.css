@@ -13,18 +13,17 @@
     align-content: center;
     text-align: center;
     font-weight: 300;
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
-    
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;     
     color: white;
   }
 #planets tr:hover {
     opacity: .8;
-    color: rgb(80, 251, 209);
+    color: rgb(230, 248, 69);
     font-weight: 300;
   }
 
 #planets td, #planets th {
-  border: 2px solid #ddd;
+  border: 2px solid yellow;
   padding: 12px;
   width :25%;
 }
@@ -32,9 +31,9 @@
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: center;
-  background-color: #4CAF50;
+  background-color: rgb(230, 248, 69);
   opacity: .8;
-  color: white;
+  color: black;
   
 }
 .container{
@@ -45,8 +44,15 @@
 button{
   width:100px;
   margin-top: 2%;
+  margin-bottom: 15%;
   
 }
 input{
   width: 80px;
+  background: lightyellow;
+  color: white;
+  border: none;
+}
+table th{
+  border: none;
 }

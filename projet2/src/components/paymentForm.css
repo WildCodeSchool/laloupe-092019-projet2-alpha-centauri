@@ -1,0 +1,38 @@
+.PaymentForm{
+    display: flex;
+    /* flex-direction: row; */
+    color: wheat;   
+    margin-bottom: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    border :3px solid yellow;
+    border-radius: 10px;
+    width: 80%;
+    /* height: 550px; */
+    margin-top: 10vh;
+}
+
+.Payment_form {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+label{
+    color:wheat;
+}
+input{
+    background-color: rgb(243, 243, 88);
+    width: 200px;
+}
+
+.pForm{     
+    
+    width: 40%;    
+}
+.address{    
+    
+    width: 40%;  
+}
+h2{color:yellow;}

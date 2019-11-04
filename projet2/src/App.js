@@ -8,6 +8,10 @@ import {NavLink} from 'react-router-dom';
 import About from './components/About';
 import SignIn from './components/SignIn';
 import Table from './components/Table';
+import Payment from './components/Payment';
+
+
+
 
 function App() {
   return (
@@ -16,17 +20,21 @@ function App() {
     
     <Router>
     <Switch>
-    <div>    
-    <Route path="/" exact component={Intro}/>
-    <Route path="/" exact component={SolarSystem}/>
-    <Route path="/About" component={About}/>   
-    <Route path="/SignIn" component={SignIn}/>
-    <Route path="/Table" component={Table}/>
-    </div>   
+     <div> 
+    <Route path="/" exact component={Intro} />
+    <Route path="/" exact component={SolarSystem} />
+    <Route path="/About" component={About} />   
+    <Route path="/SignIn" component={SignIn} />
+    <Route path="/Table" component={Table} />
+    <Route path="/Payment" component={Payment}/>
+      
+     </div> 
 
     </Switch>
     </Router>
+
     <Footer/>
+
     </div>
     );
   }
