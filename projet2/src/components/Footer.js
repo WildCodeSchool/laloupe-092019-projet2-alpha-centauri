@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import {Link} from 'react-router-dom';
 import About from './About'
+import Rentals from './Rentals/Rentals'
 import './Footer.css';
 
 
@@ -25,7 +26,7 @@ class Footer extends Component{
       <div class="myAccount dsk-3 tab-6 mob-6">
         <h4>Account</h4>
         <p>Sign in</p>
-        <p>Order status</p>
+        <Link to= "/Rentals"><p>Order status</p></Link>
       </div>
       <div class="aboutUs dsk-3 tab-6 mob-6">
       <h4>About us</h4>
@@ -45,6 +46,9 @@ class Footer extends Component{
         <Switch>
           <Route path="/About">
             <About />
+            </Route>
+            <Route path ="/Rentals">
+              <Rentals/>
           </Route>
         </Switch>
       </div>

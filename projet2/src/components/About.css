@@ -15,27 +15,44 @@
 }
 
 
-.divspace{
-  
+hr.style18 { 
+  height: 30px; 
+  border-style: solid; 
+  width:40%;
+  margin-left: 30%;
+  border-color: #8EC127; 
+  border-width: 3px 0 0 0; 
+  border-radius: 20px; 
+} 
+hr.style18:before { 
+  display: block; 
+  content: ""; 
+  height: 30px; 
+  margin-top: -31px; 
+  border-style: solid; 
+  border-color: #8c8b8b; 
+  border-width: 0 0 1px 0; 
+  border-radius: 20px; 
+}
+
+
+.divspaceabout{
+  box-shadow: 0 0 30px rgba(161,204,253,0.55);
   color: white;
-  border-radius: 5%/8%; /*45px/15px;*/
+  border-radius: 20px;
   font-size:20px;
   position: relative;
-  width: 80%;
+  width: 90%;
   height: auto;
   margin: 0 auto;
   margin-top: 2%;
   margin-bottom: 8%;
-  background: rgba(21, 53, 62,.7);
+  background:  rgba(161,204,253,0.55);
   padding: 20px 22px;
-  border: 4px solid;
-  border-top-color: rgba(196, 203, 204, 0.4);
-  border-left-color: rgba(196, 203, 204,.4);
-  border-bottom-color: rgba(196, 203, 204,.4);
-  border-right-color: rgba(196, 203, 204,.4);
 }
 
 .neonTitle{ 
+  border-bottom: 5px solid #fff;
   position: relative; 
   margin: 0; 
   padding: 0; 
@@ -46,11 +63,6 @@
   font-size: 5.5em; 
   filter: blur(1px); 
   font-weight: 100; 
-  text-shadow: 0 0 10px rgba(255,255,255,1), 
-  0 0 20px rgba(255,255,255,1), 
-  0 0 40px rgba(255,255,255,1), 
-  0 0 80px rgba(255,255,255,1), 
-  0 0 160px rgba(255,255,255,1); 
   font-family: 'radio space';
 } 
 
@@ -60,14 +72,9 @@
   padding: 0; 
   width: 100%; 
   text-align: center; 
-  color: #cd3700; 
-  font-size: 1.2em; 
-  filter: blur(1px); 
-  text-shadow: 0 0 10px rgb(214,45,32,1), 
-  0 0 20px rgb(214,45,32,1), 
-  0 0 40px rgb(214,45,32,1), 
-  0 0 80px rgb(214,45,32,1), 
-  0 0 160px rgba(214,45,32,1); 
+  color: #8ec127; 
+  font-size: 1.5em; 
+  font-weight: 800;
   font-family: 'fhspace';
 } 
 
@@ -89,6 +96,7 @@
   .image_resize{
     height: auto;
     width: 100%;
+    box-shadow: -10px 10px 10px black;
   }
   
   

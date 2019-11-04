@@ -6,33 +6,48 @@ import Family from "./image/family.jpg"
 import { Spring } from 'react-spring/renderprops';
 import VisibilitySensor from "react-visibility-sensor";
 
-
 class About extends Component {
     constructor(props) {
         super(props);
-        this.state = {  }
+        this.state = {  
+            visible: null,
+            visibleimg:null
+        }
+        this.onChangeVisibility = this.onChangeVisibility.bind(this)
+        this.onChangeVisibilityimg = this.onChangeVisibilityimg.bind(this)
     }
+
+    onChangeVisibility (isVisible) {
+        this.setState({visible: isVisible});
+      }
+    onChangeVisibilityimg (isVisible) {
+        this.setState({visibleimg: isVisible});
+      }
+
+
     render() { 
         return ( 
             <div>
-            <div className="divspace">
+            <div className="divspaceabout">
             
-            <VisibilitySensor>
-            {({ isVisible }) => (
-                <Spring   
-                to={{ opacity: isVisible ? 1 : 0, }}>
-                {props => <div style={props}  className="col ">
+           
+                 <Spring
+            from={{ opacity: 0 }}
+            to={{ opacity: 1 }}
+            config={{ delay: 1000, duration: 1000 }}
+                >
+                {props => <div   className="col ">
                 <h1 className="neonTitle ">About us</h1>
-                <p className=" text_about talig m-top "><span className="neonTitlered">Launch Yourself !</span>
+                <p style={props} className=" text_about talig m-top "><span className="neonTitlered">Launch Yourself !</span>
                 </p>
                 </div>}
                 </Spring>
-                )}
-                </VisibilitySensor>
+                
+                <hr className="style18"/>
                 
                 <div className="row_desk m-top tab-col col_mob ">
-                <p className="text_about dsk-5 tab-12">Alpha Centauri is a full service global 
-                <span className="neonTitlered">Spaceline</span>, offering year-round low fares with an extensive global route network flying to and from centrally-located spaceport.</p>
+                <p className="text_about dsk-5 tab-12">Alpha Centauri is a full service global  
+                <span className="neonTitlered"> Spaceline</span>, offering year-round low fares with an extensive global route network flying to and from centrally-located spaceport.</p>
                 <div className="divimage dsk-6 dsk-offset-1 tab-12">
                 <img className="image_resize" src={Space} alt=""/>
                 </div>
@@ -42,10 +57,12 @@ class About extends Component {
                 
                 <div className="row_desk m-top col_mob">
                 
-                <VisibilitySensor>
+                <VisibilitySensor onChange={this.onChangeVisibility} active={!this.state.visible} >
                 {({ isVisible }) => (
-                    <Spring   
-                    to={{ opacity: isVisible ? 1 : 0 }}>
+                    <Spring  
+               
+                    to={{ opacity: isVisible ? 1 : 0 }}
+                    >
                     {props =>
                         <div style={props} className="dsk-4 mob-12 tab-12  row_mob tab-row">
                         <span className="neonTitlered mob-12 tab-3"><p className="">Superstrength</p></span>
@@ -61,14 +78,14 @@ class About extends Component {
                         </div>
                         </div>
                         
-                        <div>
-                        <div><p className="text_about m-top">Our teams work hard in order to improve the quality of our services because the priority is  <span className="neonTitlered">you</span> ! </p></div>
-                        <VisibilitySensor>
+                        <div className="row m-top">
+                        <div className="dsk-8"><p className="text_about m-top ">Our teams work hard in order to improve the quality of our services because the priority is  <span className="neonTitlered">you</span> ! </p></div>
+                        <VisibilitySensor onChange={this.onChangeVisibilityimg} active={!this.state.visibleimg}  partialVisibility={true} minTopValue={200}>
                         {({ isVisible }) => (
                             <Spring   
                             to={{ opacity: isVisible ? 1 : 0 }}>
                             {props =>
-                                <div style={props} className="dsk-offset-2 dsk-8 m-top"> <img className="image_resize" src={Family} alt=""/></div>
+                                <div style={props} className="dsk-6 dsk-offset-1 m-top"> <img className="image_resize" src={Family} alt=""/></div>
                             }
                             </Spring>
                             )}
