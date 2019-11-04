@@ -19,9 +19,15 @@
 }
 
 #universe{
-  height: 85%
+  height: 85%;
+  margin-top: 66px;
 }
 
+.dxiZIA {
+  height: 70%;
+  margin: auto 0;
+  width: 85px;
+}
 
 }
 
@@ -41,7 +47,7 @@
   .mob-offset-12{margin-left:100%}
 }
 
-@media screen and (min-width: 541px) and (max-width: 720px){
+@media screen and (min-width: 541px) and (max-width: 768px){
   
   .tab-0 {display: none;}
   .tab-1{width:8.33%;}
@@ -69,7 +75,7 @@
 }
 
 
-@media screen and (min-width: 541px) and (max-width: 720px){
+@media screen and (min-width: 541px) and (max-width: 768px){
   .tab-offset-0{display:none}
   .tab-offset-1{margin-left:8.30%}
   .tab-offset-2{margin-left:16.6%}
@@ -84,7 +90,7 @@
   .tab-offset-11{margin-left:91.6%}
   .tab-offset-12{margin-left:100%}
 }
-@media screen and (min-width: 721px) {
+@media screen and (min-width: 769px) {
   .dsk-0 {display: none;}
   .dsk-1{width:8.33%;}
   .dsk-2{width:16.66%;}
@@ -100,7 +106,7 @@
   .dsk-12{width:100%;}
 
   .zoom-large.view-2D .scale-stretched #solar-system {
-    font-size: 27%;
+    font-size: 29%;
 }
 
 #universe{
@@ -120,7 +126,7 @@
 
 
 }
-@media screen and (min-width: 721px){
+@media screen and (min-width: 769px){
   .dsk-offset-0{display:none}
   .dsk-offset-1{margin-left:8.30%}
   .dsk-offset-2{margin-left:16.6%}
