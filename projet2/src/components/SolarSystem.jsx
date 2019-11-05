@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './SolarSystem.css';
 import './mediaQueries.css';
+import Mercury from './Planets/Mercury';
+import Venus from './Planets/Venus';
 
 class SolarSystem extends Component {
     constructor(props) {
@@ -21,7 +23,7 @@ class SolarSystem extends Component {
                                 <div id="solar-system" className="earth">
                                     <div id="mercury" className="orbit">
                                         <div className="pos">
-                                        <a href="">  <div className="planet">
+                                            <a href="Mercury">  <div className="planet">
                                                 <dl className="infos">
                                                     <dt>Mercury</dt>
                                                     <dd><span></span></dd>
@@ -30,22 +32,22 @@ class SolarSystem extends Component {
                                             </a>
                                         </div>
                                     </div>
-                                    
+
                                     <div id="venus" className="orbit">
                                         <div className="pos">
-                                            <div className="planet">
+                                            <a href="Venus">  <div className="planet">
                                                 <dl className="infos">
                                                     <dt>Venus</dt>
                                                     <dd><span></span></dd>
                                                 </dl>
                                             </div>
+                                            </a>
                                         </div>
                                     </div>
                                     <div id="earth" className="orbit">
                                         <div className="pos">
                                             <div className="orbit">
                                                 <div className="pos">
-                                                    <div className="moon"></div>
                                                 </div>
                                             </div>
                                             <div className="planet">
@@ -54,57 +56,63 @@ class SolarSystem extends Component {
                                                     <dd><span></span></dd>
                                                 </dl>
                                             </div>
+                                            
                                         </div>
                                     </div>
                                     <div id="mars" className="orbit">
                                         <div className="pos">
-                                            <div className="planet">
+                                            <a href="Mars">   <div className="planet">
                                                 <dl className="infos">
                                                     <dt>Mars</dt>
                                                     <dd><span></span></dd>
                                                 </dl>
                                             </div>
+                                            </a>
                                         </div>
                                     </div>
                                     <div id="jupiter" className="orbit">
                                         <div className="pos">
-                                            <div className="planet">
+                                            <a href="#">  <div className="planet">
                                                 <dl className="infos">
                                                     <dt>Jupiter</dt>
                                                     <dd><span></span></dd>
                                                 </dl>
                                             </div>
+                                            </a>
                                         </div>
                                     </div>
                                     <div id="saturn" className="orbit">
                                         <div className="pos">
-                                            <div className="planet">
+                                            <a href="#"> <div className="planet">
                                                 <div className="ring"></div>
                                                 <dl className="infos">
                                                     <dt>Saturn</dt>
                                                     <dd><span></span></dd>
                                                 </dl>
                                             </div>
+                                            </a>
                                         </div>
                                     </div>
                                     <div id="uranus" className="orbit">
                                         <div className="pos">
-                                            <div className="planet">
+                                            <a href="#">   <div className="planet">
                                                 <dl className="infos">
                                                     <dt>Uranus</dt>
                                                     <dd><span></span></dd>
                                                 </dl>
                                             </div>
+                                            </a>
                                         </div>
                                     </div>
                                     <div id="neptune" className="orbit">
                                         <div className="pos">
-                                            <div className="planet">
+                                            <a href="#">  <div className="planet">
                                                 <dl className="infos">
                                                     <dt>Neptune</dt>
                                                     <dd><span></span></dd>
                                                 </dl>
                                             </div>
+                                            </a>
                                         </div>
                                     </div>
                                     <div id="sun">
@@ -116,10 +124,10 @@ class SolarSystem extends Component {
                                 </div>
                             </div>
                         </div>
-                            
+
                     </div>
                 </section>
-                
+
             </div>
         );
     }

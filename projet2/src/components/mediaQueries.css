@@ -15,7 +15,7 @@
 
 
   .zoom-large.view-2D .scale-stretched #solar-system {
-    font-size: 66%;
+    font-size: 73%;
 }
 
 #universe{
@@ -27,6 +27,14 @@
   height: 70%;
   margin: auto 0;
   width: 85px;
+}
+
+.mercury{
+  margin-top: 76px;
+}
+
+.venus{
+  margin-top: 76px;
 }
 
 }
@@ -71,6 +79,16 @@
   height: 85%;
   margin-top: 78px;
 }
+
+.mercury{
+  margin-top: 76px;
+}
+
+
+.venus{
+  margin-top: 76px;
+}
+
 
 }
 
@@ -123,6 +141,45 @@
   align-content: space-around;
 }
 
+.mercury{
+  margin-top: 55px;
+  height: 700px;
+  width: 1000px;
+  margin-left: 17%;
+  border: 2px whitesmoke solid;
+}
+
+.venus{
+  margin-top: 55px;
+  height: 700px;
+  width: 1000px;
+  margin-left: 17%;
+  border: 2px whitesmoke solid;
+}
+
+.mars{
+  margin-top: 55px;
+  height: 700px;
+  width: 1000px;
+  margin-left: 17%;
+  border: 2px whitesmoke solid;
+}
+
+.dad-block-txt-mercury{
+  display: flex;
+  justify-content: space-around;
+}
+
+.block-txt-planets-dsk{
+  border: 2px whitesmoke solid;
+  border-radius: 8px;
+  padding: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 360px;
+  height: 340px;
+  
+}
 
 
 }

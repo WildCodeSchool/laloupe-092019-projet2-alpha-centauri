@@ -23,7 +23,7 @@ const Wrapper = styled.div`
   
 
   & span {
-    background: aqua;
+    background: yellow;
     display: block;
     position: relative;
     width: 3.5rem;

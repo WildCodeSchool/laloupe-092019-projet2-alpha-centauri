@@ -15,28 +15,28 @@ class Footer extends Component{
 
       <Router>
     <div>
-    <footer class="footer">
-    <div class="row">
-      <div class="help dsk-3 tab-6 mob-6">
+    <footer className="footer">
+    <div className="row">
+      <div className="help dsk-3 tab-6 mob-6">
         <h4>Help</h4>
         <p>FAQ</p>
         <p>Contact</p>
       </div>
-      <div class="myAccount dsk-3 tab-6 mob-6">
+      <div className="myAccount dsk-3 tab-6 mob-6">
         <h4>Account</h4>
         <p>Sign in</p>
         <p>Order status</p>
       </div>
-      <div class="aboutUs dsk-3 tab-6 mob-6">
+      <div className="aboutUs dsk-3 tab-6 mob-6">
       <h4>About us</h4>
       <Link to="/About"><p>Company</p></Link>
         <p>Support</p>
       </div>
-      <div class="social dsk-3 tab-6 mob-6">
+      <div className="social dsk-3 tab-6 mob-6">
         <h4>Social</h4>
-        <i class="fab fa-facebook-square"></i>
-        <i class="fab fa-twitter-square"></i>
-        <i class="fab fa-instagram"></i>
+        <i className="fab fa-facebook-square"></i>
+        <i className="fab fa-twitter-square"></i>
+        <i className="fab fa-instagram"></i>
       </div>
     </div>
   </footer>
