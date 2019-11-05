@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import About from './About'
 import Rentals from './Rentals/Rentals'
 import './Footer.css';
+import RentalList from './Rentals/RentalList';
 
 
 class Footer extends Component{
@@ -47,9 +48,7 @@ class Footer extends Component{
           <Route path="/About">
             <About />
             </Route>
-            <Route path ="/Rentals">
-              <Rentals/>
-          </Route>
+            <Route path ="/Rentals" component={RentalList} />
         </Switch>
       </div>
     </Router>
