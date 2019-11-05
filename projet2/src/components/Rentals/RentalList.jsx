@@ -13,7 +13,7 @@ const ListSpaceship = [{
 
 {
     title:'Saturn V',
-    description:'Do you love history? We ask because we put at your disposal a faithful reproduction of Saturn V. Of course not exactly... you can still go to Pluto in less than one hour. However who wouldn\'t like to take the place of Neil Armstrong',
+    description:'Do you love history? We ask because we put at your disposal a faithful reproduction of Saturn V. Of course not exactly... you can still go to Pluto in less than one hour. However who wouldn\'t like to take the place of Neil Armstrong.',
     image:'https://guinnessworldrecords.com/Images/Saturn-V_tcm25-546849.jpg',
     price:80500
     

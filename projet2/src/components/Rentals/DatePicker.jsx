@@ -4,16 +4,40 @@ import DayPicker, { DateUtils } from 'react-day-picker';
 import 'react-day-picker/lib/style.css';
 import './Rentals.css'
 
+
+
 export default class DataPicker extends React.Component {
   static defaultProps = {
-    numberOfMonths: 2,
-  };
+    numberOfMonths: 2
+  }
 
   constructor(props) {
     super(props);
+    this.state = { width: 0, height: 0 };
     this.handleDayClick = this.handleDayClick.bind(this);
     this.handleResetClick = this.handleResetClick.bind(this);
     this.state = this.getInitialState();
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+  }
+
+componentDidMount() {
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
+  }
+  
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+  
+  updateWindowDimensions() {
+    this.setState({ width: window.innerWidth, height: window.innerHeight });
+  }
+
+  change = () => {
+    if( this.state.width > 600){
+      return 2
+    }
+    else{return 1}
   }
 
   getInitialState() {
@@ -25,6 +49,9 @@ export default class DataPicker extends React.Component {
     };
    
   }
+
+  
+
 
   handleDayClick(day) {
     const range = DateUtils.addDayToRange(day, this.state);
@@ -58,14 +85,14 @@ export default class DataPicker extends React.Component {
         </p>
         <DayPicker
           className="Selectable"
-          numberOfMonths={this.props.numberOfMonths}
+          numberOfMonths={this.change()}
           selectedDays={[from, { from, to }]}
           modifiers={modifiers}
           onDayClick={this.handleDayClick}
           
           
         />
-       
+      
       </div>
     );
   }

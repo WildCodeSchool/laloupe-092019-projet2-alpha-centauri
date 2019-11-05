@@ -209,7 +209,18 @@ color: #A68B03}
 
     margin-bottom:5%;
     margin-top:5%;
-    color: black
-
-
+    color: black;
+    justify-content: space-between;
+    margin-left:15%;
+    margin-right:15%;
   }
+
+  .title_money{
+
+    border-bottom: 2px solid #A68B03;
+    text-align: center;
+  }
+
+  .Button_insurance{text-align:center}
+
+  .price_tag{line-height: 40px;}

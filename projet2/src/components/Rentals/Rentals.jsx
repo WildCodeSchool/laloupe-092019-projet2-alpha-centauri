@@ -13,8 +13,6 @@ constructor(props) {
   render() {
 
     const {title, price, description, image} = this.props
-
-  console.log(this.props)
     return (
       <div className="divspacerentals col">
         <div className="container_des_img des-container row">

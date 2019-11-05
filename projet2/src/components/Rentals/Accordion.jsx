@@ -39,16 +39,18 @@ function Accordion(props) {
       >
 
         <div className="centerdiv">
-       <DataPicker/>
+      <DataPicker/>
         </div>
 
     <div className="container_price row">
-        <div className="row">
-        <div><ButtonInsurance/></div>
-        <div>Be insured, rest assured!</div>
+        <div className="col">
+        <div className="title_money">Insurance</div>
+        <div className="Button_insurance"><ButtonInsurance/></div>
         </div>
-
-        <div className="black">{price.price} Buzz </div>
+        <div className="col">
+          <div className="title_money">Price</div>
+          <div className="black price_tag">{price.price} Buzz </div>
+        </div>
 
         <div><button className="button_travel">Travel!</button></div>
         </div>
