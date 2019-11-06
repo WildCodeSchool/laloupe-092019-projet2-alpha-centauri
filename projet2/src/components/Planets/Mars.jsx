@@ -9,7 +9,7 @@ class Mars extends Component {
     render() { 
         return ( 
             <div>
-                 <img className="mars" src="https://www.astro-rennes.com/planetes/images/mars/detail_mars.jpg"/>
+                 <img className="mars" src="https://www.astro-rennes.com/planetes/images/mars/detail_mars.jpg" alt='Mars'/>
             <h1 className="color-planets-txt font-size-h1-planets">Mars</h1>
               
                 <div className="dad-block-txt-mercury">
