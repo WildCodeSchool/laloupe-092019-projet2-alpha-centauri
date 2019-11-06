@@ -1,44 +1,70 @@
-label{
+.label{
   display: flex;
   flex-direction: column;
+  justify-items: center;
   width: 200px;
   padding: 10px;
   border-radius: 10px;
   color: wheat;
-  font-size: 1.5rem;
-
+  font-size: 1.5rem;  
+}
+h3{
+  text-align: center;
+  align-items: center;
+  color: yellow;
+  font-size: 2rem;
+  
 }
 .container_form{
   display: flex;
-  flex-direction: row;
-  height: auto;
-  width: 50vh;
-  border: 2px solid wheat;
-  border-radius: 10px;
-  padding: 10px;
-  margin-top: 4%;  
+  justify-items: center;   
+  margin-top: 12%;
+  margin-bottom: 10%;
+  
 }
-@media screen and (min-width: 541px) and (max-width: 720px){
+.Contact_Form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+@media screen and (min-width: 541px) and (max-width: 768px){
+  .Contact_Form{
+    display: flex;
+    flex-direction: column;
+      
+  }
   .container_form{
     display: flex;
-    margin-left:15%;
-
+    
+  }
+}
+@media screen and (min-width: 541px) and (max-width: 768px){
+  .Contact_Form{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .container_form{
+    display: flex;
+    margin-top:20%;
   }
 }
 
-input{
+.inputSign{
   background-color: rgb(243, 243, 88);
   border-radius: 10px;
   padding: 5px 15px;
+  
 }
-button{
+.buttonSign{
   background-color: rgb(243, 243, 88);
   font-size: 1.5rem;
   border-style: none;
   border-radius: 10px;
   margin-top: 30px;   
 }
-button:hover{
+.buttonSign:hover{
   transform: scale(1.5);
 }
   

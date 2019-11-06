@@ -32,27 +32,40 @@ class Payment extends React.Component{
                 <form className = "Payment_form" onSubmit={event => event.preventDefault()}>
                     <div className="pForm">
                         <h2>Payment Form</h2>
-                        <label>Firstname
-                             <input type ="text"
+                        <div className="div">
+                        <label className="labelPay">Firstname
+                             <input className="inputPay"
+                                    type ="text"
                                     value = {this.firstName}
                                     onChange={this.handleFirstNameChange}/>
                         </label>
-                        <label>Lastname
-                             <input type ="text"
+                        </div>
+                        <div className="div">
+                        <label className="labelPay">Lastname
+                             <input className="inputPay"
+                                    type ="text"
                                     value = {this.lastName}
                                     onChange={this.handleLastNameChange}/>
                         </label>
-                        <label>credit card number
-                             <input type = "num"
+                        </div>
+                        <div className="div">
+                        <label className="labelPay">credit card number
+                             <input className="inputPay"
+                                    type = "num"
                                     value = {this.cardNb}
                                     onChange={this.handleCardNbChange}/>
                         </label>
-                        <label>security code
-                             <input type = "password"
+                        </div>
+                        <div className="div">
+                        <label className="labelPay">security code
+                             <input className="inputPay"
+                                    type = "password"
                                     value = {this.secuCode}
                                     onChange ={this.handleSecuCodeChange}/>
                         </label>
-                        <label>expiration month
+                        </div>
+                        <div className="divPay">
+                        <label className="labelPay">expiration month
                             <select name="month">
                                 <option value="jan">January</option>
                                 <option value="feb">February</option>
@@ -67,7 +80,9 @@ class Payment extends React.Component{
                                 <option value="dec">December</option>
                             </select>
                         </label>
-                        <label>expiration year
+                        </div>
+                        <div className="divPay">
+                        <label className="labelPay">expiration year
                             <select name="year">
                                 <option value="2059">2059</option>
                                 <option value="2060">2060</option>
@@ -78,27 +93,35 @@ class Payment extends React.Component{
                                 <option value="2065">2065</option>
                             </select>                
                         </label>
-                    </div>                            
+                    </div> 
+                    </div>                           
                 <div className="address"> 
                 <h2>Billing address</h2>
-                <label>Street Name
-                     <input type="text"
+                <div className="div">
+                <label className="labelPay">Street Name
+                     <input className="inputPay"
+                            type="text"
                             value={this.streetName}
                             onChange={this.handleStreetNameChange}/>
                 </label>
-                <label>City
-                    <input
+                </div>
+                <div className="div">
+                <label className="labelPay">City
+                    <input className="inputPay"
                            type="text"
                            value={this.city}
                            onChange={this.handleCityChange}/>
                 </label>
-                <label>Postal Code
-                    <input
+                </div>
+                <div className="div">
+                <label className="labelPay">Postal Code
+                    <input className="inputPay"
                         type="num"
                         value={this.postalCode}
                         onChange={this.handlePostalCodeChange}/>
 
                 </label>
+                </div>
                 </div> 
                 </form>
             </div>

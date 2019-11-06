@@ -1,6 +1,5 @@
 .PaymentForm{
     display: flex;
-    /* flex-direction: row; */
     color: wheat;   
     margin-bottom: 15%;
     margin-left: auto;
@@ -8,7 +7,7 @@
     border :3px solid yellow;
     border-radius: 10px;
     width: 80%;
-    /* height: 550px; */
+    height: auto;
     margin-top: 10vh;
 }
 
@@ -19,20 +18,47 @@
     padding: 10px;
 }
 
-label{
+.labelPay{
     color:wheat;
+    padding: 5px;
+    font-size: 1.5rem;
 }
-input{
+.inputPay{
     background-color: rgb(243, 243, 88);
     width: 200px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
 }
 
 .pForm{     
-    
+    flex-direction: colum;
+    flex-wrap: wrap;
     width: 40%;    
 }
 .address{    
-    
+    flex-direction: column;
+    flex-wrap: wrap;
     width: 40%;  
 }
-h2{color:yellow;}
+h2{
+    color:yellow;
+}
+
+@media screen and (max-width: 540px){
+    .Payment_form{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+}
+.div{
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 40%;
+}
+.divPay{
+    flex-direction: column;
+    width: 50%;
+}

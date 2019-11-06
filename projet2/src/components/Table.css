@@ -2,10 +2,10 @@
     text-align: flex-start;
     font-family: arial, sans-serif;
     font-weight: 200;
-    color: white;
-    padding-left: 25%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    color: yellow;
+    padding-left: 10%;
+    margin-top: 15%;
+    margin-bottom: 15%;
   }
   
   #planets {
@@ -15,6 +15,7 @@
     font-weight: 300;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;     
     color: white;
+    width: 200px;
   }
 #planets tr:hover {
     opacity: .8;
@@ -22,37 +23,82 @@
     font-weight: 300;
   }
 
-#planets td, #planets th {
+#planets td{
   border: 2px solid yellow;
   padding: 12px;
-  width :25%;
+  width :200px;
+  padding-left:0;
+  padding-right:0;
 }
 #planets th {
   padding-top: 12px;
-  padding-bottom: 12px;
+  padding-bottom: 12px;  
   text-align: center;
   background-color: rgb(230, 248, 69);
   opacity: .8;
   color: black;
-  
+  width: 200px;
+  border: none;  
 }
-.container{
+
+.containerTable{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  width:80%;
+  
 }
 button{
   width:100px;
   margin-top: 2%;
   margin-bottom: 15%;
-  
+  background: rgb(245, 245, 60);
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 1rem;   
 }
 input{
   width: 80px;
-  background: lightyellow;
-  color: white;
+  background: rgb(245, 245, 60);
+  color: wheat;
   border: none;
+  border-radius: 10px;
+  padding:5px;
 }
-table th{
-  border: none;
+ 
+
+h3{
+  color: yellow;
+}
+.MobP{
+  color: wheat;
+  height: 37px;
+  overflow: hidden;    
+}
+
+h2{
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+@media screen and (min-width: 541px) and (max-width: 768px){
+  .containerTable{
+   justify-content: center;
+     
+  }
+  #title{
+    margin-top: -30px;
+  }
+  #planets{
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-witdh: 540px){
+  .containerTable{
+    display: none;
+  }  
 }

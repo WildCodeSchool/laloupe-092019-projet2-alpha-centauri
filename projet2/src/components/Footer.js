@@ -18,7 +18,7 @@ class Footer extends Component{
      <Router>
     <footer class="footer">
     <div class="row">
-      <div class="help dsk-3 tab-6 mob-6">
+      <div class="help dsk-offset-2 dsk-3 tab-6 mob-6">
         <ul>Help</ul>
         <li>FAQ</li>
         <li>Contact</li>

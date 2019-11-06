@@ -41,7 +41,7 @@
     .mob-offset-12{margin-left:100%}
   }
 
-  @media screen and (min-width: 541px) and (max-width: 720px){
+  @media screen and (min-width: 541px) and (max-width: 768px){
     
     .tab-0 {display: none;}
     .tab-1{width:8.33%;}
