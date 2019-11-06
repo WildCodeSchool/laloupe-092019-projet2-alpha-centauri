@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 
-
-class Mars extends Component {
+class Uranus extends Component {
     constructor(props) {
         super(props);
-        this.state = {  }
+        this.state = { }
     }
-    render() { 
-        return ( 
+
+
+    render() {
+        return (
             <div>
-                 <img className="mars" src="https://www.astro-rennes.com/planetes/images/mars/detail_mars.jpg"/>
-            <h1 className="color-planets-txt font-size-h1-planets">Mars</h1>
+                <img className="uranus" src="https://www.astro-rennes.com/planetes/images/uranus/detail_uranus.jpg"/>
+            <h1 className="color-planets-txt font-size-h1-planets">Uranus</h1>
               
                 <div className="dad-block-txt-mercury">
 
@@ -32,8 +33,10 @@ class Mars extends Component {
 
                     </div>
             </div>
-         );
+        );
     }
+
+
 }
- 
-export default Mars;
+
+export default Uranus;

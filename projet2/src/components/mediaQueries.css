@@ -1,3 +1,14 @@
+@font-face{
+  font-family: 'radio space';
+  src: url("./font/radiospace.ttf")
+ }
+
+ @font-face{
+  font-family: 'fhspace';
+  src: url("./font/Fh_Space.otf")
+ }
+
+
 @media screen and (max-width: 540px) {
   .mob-0 {display: none;}
   .mob-1{width:8.33%;}
@@ -34,6 +45,27 @@
 }
 
 .venus{
+  margin-top: 76px;
+}
+
+.mars{
+  margin-top: 76px;
+}
+
+.jupiter{
+  margin-top: 76px;
+}
+
+.saturne{
+  margin-top: 76px;
+  
+}
+
+.uranus{
+  margin-top: 76px;
+}
+
+.neptune{
   margin-top: 76px;
 }
 
@@ -89,6 +121,25 @@
   margin-top: 76px;
 }
 
+.mars{
+  margin-top: 76px;
+}
+
+.jupiter{
+  margin-top: 76px;
+}
+
+.saturne{
+  margin-top: 76px;
+}
+
+.uranus{
+  margin-top: 76px;
+}
+
+.neptune{
+  margin-top: 76px;
+}
 
 }
 
@@ -142,27 +193,61 @@
 }
 
 .mercury{
-  margin-top: 55px;
+  margin-top: 79px;
   height: 700px;
   width: 1000px;
   margin-left: 17%;
-  border: 2px whitesmoke solid;
+  border: 3px rgb(249, 204, 65) solid;
+  
 }
 
 .venus{
-  margin-top: 55px;
+  margin-top: 79px;
   height: 700px;
   width: 1000px;
   margin-left: 17%;
-  border: 2px whitesmoke solid;
+  border: 3px rgb(249, 204, 65) solid;
 }
 
 .mars{
-  margin-top: 55px;
+  margin-top: 79px;
   height: 700px;
   width: 1000px;
   margin-left: 17%;
-  border: 2px whitesmoke solid;
+  border: 3px rgb(249, 204, 65) solid;
+}
+
+
+.jupiter{
+  margin-top: 79px;
+  height: 700px;
+  width: 1000px;
+  margin-left: 17%;
+  border: 3px rgb(249, 204, 65) solid;
+}
+
+.saturne{
+  margin-top: 79px;
+  height: 700px;
+  width: 1000px;
+  margin-left: 17%;
+  border: 3px rgb(249, 204, 65) solid;
+}
+
+.uranus{
+  margin-top: 79px;
+  height: 700px;
+  width: 1000px;
+  margin-left: 17%;
+  border: 3px rgb(249, 204, 65) solid;
+}
+
+.neptune{
+  margin-top: 79px;
+  height: 700px;
+  width: 1000px;
+  margin-left: 17%;
+  border: 3px rgb(249, 204, 65) solid;
 }
 
 .dad-block-txt-mercury{
@@ -170,16 +255,19 @@
   justify-content: space-around;
 }
 
-.block-txt-planets-dsk{
-  border: 2px whitesmoke solid;
-  border-radius: 8px;
-  padding: 3px;
-  display: flex;
-  flex-wrap: wrap;
-  width: 360px;
-  height: 340px;
-  
-}
+
+.style-border-planet-txt{
+  border-radius: 20px;
+  font-size:20px;
+  position: relative;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 8%;
+  background:  rgba(249, 203, 65, 0.233);
+  padding: 20px 22px;
+ }
 
 
 }
@@ -198,3 +286,4 @@
   .dsk-offset-11{margin-left:91.6%}
   .dsk-offset-12{margin-left:100%}
 }
+
