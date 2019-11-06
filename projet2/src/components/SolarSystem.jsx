@@ -1,110 +1,122 @@
 import React, { Component } from 'react';
 import './SolarSystem.css';
 import './mediaQueries.css';
+import Mercury from './Planets/Mercury';
+import Venus from './Planets/Venus';
 
 class SolarSystem extends Component {
     constructor(props) {
         super(props);
         this.state = {}
     }
+
+
     render() {
         return (
             <div>
                 <section>
-                    <div class="opening hide-UI view-2D zoom-large data-close controls-close">
+                    <div className="opening hide-UI view-2D zoom-large data-close controls-close">
 
 
-                        <div id="universe" class="scale-stretched">
+                        <div id="universe" className="scale-stretched">
                             <div id="galaxy">
-                                <div id="solar-system" class="earth">
-                                    <div id="mercury" class="orbit">
-                                        <div class="pos">
-                                            <div class="planet">
-                                                <dl class="infos">
+                                <div id="solar-system" className="earth">
+                                    <div id="mercury" className="orbit">
+                                        <div className="pos">
+                                            <a href="Mercury">  <div className="planet">
+                                                <dl className="infos">
                                                     <dt>Mercury</dt>
                                                     <dd><span></span></dd>
                                                 </dl>
                                             </div>
+                                            </a>
                                         </div>
                                     </div>
-                                    <div id="venus" class="orbit">
-                                        <div class="pos">
-                                            <div class="planet">
-                                                <dl class="infos">
+
+                                    <div id="venus" className="orbit">
+                                        <div className="pos">
+                                            <a href="Venus">  <div className="planet">
+                                                <dl className="infos">
                                                     <dt>Venus</dt>
                                                     <dd><span></span></dd>
                                                 </dl>
                                             </div>
+                                            </a>
                                         </div>
                                     </div>
-                                    <div id="earth" class="orbit">
-                                        <div class="pos">
-                                            <div class="orbit">
-                                                <div class="pos">
-                                                    <div class="moon"></div>
+                                    <div id="earth" className="orbit">
+                                        <div className="pos">
+                                            <div className="orbit">
+                                                <div className="pos">
                                                 </div>
                                             </div>
-                                            <div class="planet">
-                                                <dl class="infos">
+                                            <div className="planet">
+                                                <dl className="infos">
                                                     <dt>Earth</dt>
                                                     <dd><span></span></dd>
                                                 </dl>
                                             </div>
+                                            
                                         </div>
                                     </div>
-                                    <div id="mars" class="orbit">
-                                        <div class="pos">
-                                            <div class="planet">
-                                                <dl class="infos">
+                                    <div id="mars" className="orbit">
+                                        <div className="pos">
+                                            <a href="Mars">   <div className="planet">
+                                                <dl className="infos">
                                                     <dt>Mars</dt>
                                                     <dd><span></span></dd>
                                                 </dl>
                                             </div>
+                                            </a>
                                         </div>
                                     </div>
-                                    <div id="jupiter" class="orbit">
-                                        <div class="pos">
-                                            <div class="planet">
-                                                <dl class="infos">
+                                    <div id="jupiter" className="orbit">
+                                        <div className="pos">
+                                            <a href="#">  <div className="planet">
+                                                <dl className="infos">
                                                     <dt>Jupiter</dt>
                                                     <dd><span></span></dd>
                                                 </dl>
                                             </div>
+                                            </a>
                                         </div>
                                     </div>
-                                    <div id="saturn" class="orbit">
-                                        <div class="pos">
-                                            <div class="planet">
-                                                <div class="ring"></div>
-                                                <dl class="infos">
+                                    <div id="saturn" className="orbit">
+                                        <div className="pos">
+                                            <a href="#"> <div className="planet">
+                                                <div className="ring"></div>
+                                                <dl className="infos">
                                                     <dt>Saturn</dt>
                                                     <dd><span></span></dd>
                                                 </dl>
                                             </div>
+                                            </a>
                                         </div>
                                     </div>
-                                    <div id="uranus" class="orbit">
-                                        <div class="pos">
-                                            <div class="planet">
-                                                <dl class="infos">
+                                    <div id="uranus" className="orbit">
+                                        <div className="pos">
+                                            <a href="#">   <div className="planet">
+                                                <dl className="infos">
                                                     <dt>Uranus</dt>
                                                     <dd><span></span></dd>
                                                 </dl>
                                             </div>
+                                            </a>
                                         </div>
                                     </div>
-                                    <div id="neptune" class="orbit">
-                                        <div class="pos">
-                                            <div class="planet">
-                                                <dl class="infos">
+                                    <div id="neptune" className="orbit">
+                                        <div className="pos">
+                                            <a href="#">  <div className="planet">
+                                                <dl className="infos">
                                                     <dt>Neptune</dt>
                                                     <dd><span></span></dd>
                                                 </dl>
                                             </div>
+                                            </a>
                                         </div>
                                     </div>
                                     <div id="sun">
-                                        <dl class="infos">
+                                        <dl className="infos">
                                             <dt>Sun</dt>
                                             <dd><span></span></dd>
                                         </dl>
@@ -115,6 +127,7 @@ class SolarSystem extends Component {
 
                     </div>
                 </section>
+
             </div>
         );
     }

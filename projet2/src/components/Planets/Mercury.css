@@ -1,0 +1,28 @@
+.color-planets-txt{
+    margin-top: 5px;
+    margin-bottom: 55px;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+
+.font-size-h1-planets{
+    margin-top: 15px;
+    font-size: 20px;
+    text-decoration: underline;
+    text-decoration-color: yellow;
+    text-decoration-style: solid;
+}
+
+.deco-h-two-mercury{
+    text-decoration-line: underline whitesmoke;
+}
+
+h1{
+    align-content: center;
+}
