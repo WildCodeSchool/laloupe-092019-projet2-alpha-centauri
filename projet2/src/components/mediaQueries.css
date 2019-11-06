@@ -47,18 +47,17 @@
 .venus{
   margin-top: 76px;
 }
-
+  
 .mars{
   margin-top: 76px;
 }
-
+  
 .jupiter{
   margin-top: 76px;
 }
-
+  
 .saturne{
   margin-top: 76px;
-  
 }
 
 .uranus{
@@ -68,10 +67,12 @@
 .neptune{
   margin-top: 76px;
 }
-
+  
+ 
 }
 
 @media screen and (max-width: 540px){
+
   .mob-offset-0{display:none}
   .mob-offset-1{margin-left:8.30%}
   .mob-offset-2{margin-left:16.6%}
@@ -120,7 +121,7 @@
 .venus{
   margin-top: 76px;
 }
-
+  
 .mars{
   margin-top: 76px;
 }
@@ -140,6 +141,7 @@
 .neptune{
   margin-top: 76px;
 }
+
 
 }
 
@@ -249,12 +251,12 @@
   margin-left: 17%;
   border: 3px rgb(249, 204, 65) solid;
 }
+  
 
 .dad-block-txt-mercury{
   display: flex;
   justify-content: space-around;
 }
-
 
 .style-border-planet-txt{
   border-radius: 20px;
@@ -271,6 +273,7 @@
 
 
 }
+
 @media screen and (min-width: 769px){
   .dsk-offset-0{display:none}
   .dsk-offset-1{margin-left:8.30%}
@@ -285,5 +288,12 @@
   .dsk-offset-10{margin-left:83.3%}
   .dsk-offset-11{margin-left:91.6%}
   .dsk-offset-12{margin-left:100%}
+}
+
+
+  
+}
+
+
 }
 

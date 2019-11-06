@@ -33,6 +33,7 @@
   border-left-color: rgba(196, 203, 204,.4);
   border-bottom-color: rgba(196, 203, 204,.4);
   border-right-color: rgba(196, 203, 204,.4);
+  min-height: calc(100vh -70px);
 }
 
 .neonTitle{ 
