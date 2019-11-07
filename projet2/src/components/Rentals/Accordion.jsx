@@ -10,9 +10,12 @@ function Accordion(props) {
   const [setActive, setActiveState] = useState("");
   const [setHeight, setHeightState] = useState("0px");
   const [setRotate, setRotateState] = useState("accordion__icon");
+  const [setDisableColor, setDisableColorState] = useState("buttonDisable")
   const [price, setprice] = useState(props)
 
   const content = useRef(null);
+
+  
 
   function toggleAccordion() {
     setActiveState(setActive === "" ? "active" : "");
@@ -24,7 +27,7 @@ function Accordion(props) {
     );
   }
 
-  
+  function toggle () {setDisableColorState(setDisableColor === "active" ? "buttonDisable" : "buttontravel")}
   
   return (
     <div className="accordion__section">

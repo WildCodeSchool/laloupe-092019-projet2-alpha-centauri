@@ -1,7 +1,7 @@
 import React, { useState, useRef, Component } from "react";
 import Accordion from './Accordion'
 import "./Rentals.css";
-import "./../mediaQueries.css";
+
 
 
 class Rentals extends Component {
@@ -15,7 +15,7 @@ constructor(props) {
     const {title, price, description, image} = this.props
     return (
       <div className="divspacerentals col">
-        <div className="container_des_img des-container row">
+        <div className="container_des_img des-container rowdsk ">
           <div className="dsk-4 ">
             <img
               className="image_resize"
