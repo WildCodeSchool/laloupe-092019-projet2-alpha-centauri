@@ -1,0 +1,76 @@
+.PaymentForm{
+    display: flex;
+    color: wheat;   
+    margin-bottom: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    border :3px solid #A68B03;
+    border-radius: 10px;
+    width: 80%;
+    height: auto;
+    margin-top: 10vh;
+}
+
+.Payment_form {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.labelPay{
+    color:wheat;
+    padding: 5px;
+    font-size: 1.5rem;
+}
+.inputPay{
+    background-color: #023859;
+    color: wheat;
+    width: 200px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.pForm{     
+    flex-direction: colum;
+    flex-wrap: wrap;
+    width: 40%; 
+    margin-left: 10%;   
+}
+.address{    
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 40%;  
+}
+h2{
+    color:#A68B03;
+}
+.payBtn{
+    margin-top: 95px;
+    color: black;
+    font-size: 1.5rem;
+    width: 150px;
+    background-color: #A68B03;
+    border-style: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+@media screen and (max-width: 540px){
+    .Payment_form{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+}
+.div{
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 40%;
+}
+.divPay{
+    flex-direction: column;
+    width: 50%;
+}

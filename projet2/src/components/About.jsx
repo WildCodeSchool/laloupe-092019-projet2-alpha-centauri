@@ -60,7 +60,6 @@ class About extends Component {
                 <VisibilitySensor onChange={this.onChangeVisibility} active={!this.state.visible} >
                 {({ isVisible }) => (
                     <Spring  
-               
                     to={{ opacity: isVisible ? 1 : 0 }}
                     >
                     {props =>
