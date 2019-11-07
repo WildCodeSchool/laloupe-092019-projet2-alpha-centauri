@@ -10,7 +10,12 @@ class Venus extends Component {
         return ( 
             <div>
 
+            <div className="mom-block-img">
+
             <img className="venus" src="https://www.astro-rennes.com/planetes/images/venus/detail_venus.jpg" />
+
+            </div>
+
             
             <h1 className="color-planets-txt font-size-h1-planets">Venus</h1>
               
@@ -18,7 +23,7 @@ class Venus extends Component {
 
                 
 
-                    <p className="color-planets-txt block-txt-planets-dsk">
+                    <p className="color-planets-txt style-border-planet-txt">
                     Venus is the second planet from the Sun.
                     It is named after the Roman goddess of love and beauty. As the second-brightest natural
                     object in the night sky after the Moon, Venus can cast shadows and, rarely, is visible
@@ -31,7 +36,7 @@ class Venus extends Component {
                     satellites, a distinction it shares only with Mercury among planets in the Solar System.
                     </p>
 
-                    <p className="color-planets-txt block-txt-planets-dsk">
+                    <p className="color-planets-txt style-border-planet-txt">
                     Venus is a terrestrial planet and is sometimes called Earth's "sister planet"
                     because of their similar size, mass, proximity to the Sun, and bulk composition.
                     It is radically different from Earth in other respects. It has the densest atmosphere 
@@ -43,7 +48,7 @@ class Venus extends Component {
                        
                     </p>
 
-                    <p className="color-planets-txt block-txt-planets-dsk">
+                    <p className="color-planets-txt style-border-planet-txt">
                         
                     Without seismic data or knowledge of its moment of inertia, little direct 
                     information is available about the internal structure and geochemistry of Venus.

@@ -8,6 +8,7 @@
   src: url("./font/Fh_Space.otf")
  }
 
+
 @media screen and (max-width: 540px) {
   .mob-0 {display: none;}
   .mob-1{width:8.33%;}
@@ -46,17 +47,18 @@
 .venus{
   margin-top: 76px;
 }
-  
+
 .mars{
   margin-top: 76px;
 }
-  
+
 .jupiter{
   margin-top: 76px;
 }
-  
+
 .saturne{
   margin-top: 76px;
+  
 }
 
 .uranus{
@@ -66,13 +68,10 @@
 .neptune{
   margin-top: 76px;
 }
-  
- 
 
 }
 
 @media screen and (max-width: 540px){
-
   .mob-offset-0{display:none}
   .mob-offset-1{margin-left:8.30%}
   .mob-offset-2{margin-left:16.6%}
@@ -121,7 +120,7 @@
 .venus{
   margin-top: 76px;
 }
-  
+
 .mars{
   margin-top: 76px;
 }
@@ -141,7 +140,6 @@
 .neptune{
   margin-top: 76px;
 }
-
 
 }
 
@@ -194,37 +192,38 @@
   align-content: space-around;
 }
 
+.mom-block-img{
+  display: flex;
+  justify-content: center;
+}
+
 .mercury{
-  margin-top: 55px;
+  margin-top: 79px;
   height: 700px;
   width: 1000px;
-  margin-left: 17%;
-  border: 2px whitesmoke solid;
+  border: 3px rgb(249, 204, 65) solid;
+  
 }
 
 .venus{
-  margin-top: 55px;
+  margin-top: 79px;
   height: 700px;
   width: 1000px;
-  margin-left: 17%;
-  border: 2px whitesmoke solid;
+  border: 3px rgb(249, 204, 65) solid;
 }
 
 .mars{
-  margin-top: 55px;
+  margin-top: 79px;
   height: 700px;
   width: 1000px;
-  margin-left: 17%;
-  border: 2px whitesmoke solid;
+  border: 3px rgb(249, 204, 65) solid;
 }
-  
 
- 
+
 .jupiter{
   margin-top: 79px;
   height: 700px;
   width: 1000px;
-  margin-left: 17%;
   border: 3px rgb(249, 204, 65) solid;
 }
 
@@ -232,7 +231,6 @@
   margin-top: 79px;
   height: 700px;
   width: 1000px;
-  margin-left: 17%;
   border: 3px rgb(249, 204, 65) solid;
 }
 
@@ -240,7 +238,6 @@
   margin-top: 79px;
   height: 700px;
   width: 1000px;
-  margin-left: 17%;
   border: 3px rgb(249, 204, 65) solid;
 }
 
@@ -248,15 +245,14 @@
   margin-top: 79px;
   height: 700px;
   width: 1000px;
-  margin-left: 17%;
   border: 3px rgb(249, 204, 65) solid;
 }
-
 
 .dad-block-txt-mercury{
   display: flex;
   justify-content: space-around;
 }
+
 
 .style-border-planet-txt{
   border-radius: 20px;
@@ -267,11 +263,25 @@
   margin: 0 auto;
   margin-top: 2%;
   margin-bottom: 8%;
-  background:  rgba(249, 203, 65, 0.233);
+  background:  rgba(65, 64, 61, 0.335);
   padding: 20px 22px;
  }
-  
-}
 
 
 }
+@media screen and (min-width: 769px){
+  .dsk-offset-0{display:none}
+  .dsk-offset-1{margin-left:8.30%}
+  .dsk-offset-2{margin-left:16.6%}
+  .dsk-offset-3{margin-left:25%}
+  .dsk-offset-4{margin-left:33.3%}
+  .dsk-offset-5{margin-left:41.6%}
+  .dsk-offset-6{margin-left:50%}
+  .dsk-offset-7{margin-left:58.6%}
+  .dsk-offset-8{margin-left:67%}
+  .dsk-offset-9{margin-left:75%}
+  .dsk-offset-10{margin-left:83.3%}
+  .dsk-offset-11{margin-left:91.6%}
+  .dsk-offset-12{margin-left:100%}
+}
+

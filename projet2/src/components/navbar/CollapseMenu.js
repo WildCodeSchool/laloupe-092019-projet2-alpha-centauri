@@ -17,8 +17,8 @@ const CollapseMenu = (props) => {
       >
         <NavLinks>
           <li ><a href="/"  onClick={props.handleNavbar}>Home</a></li>
-          <li ><a href="/"  onClick={props.handleNavbar}>Planets</a></li>
-          <li ><a href="/"  onClick={props.handleNavbar}>Spaceship Rentals</a></li>
+          <li ><a href=""  onClick={props.handleNavbar}>Planets</a></li>
+          <li ><a href=""  onClick={props.handleNavbar}>Spaceship Rentals</a></li>
           <li ><a href=""  onClick={props.handleNavbar}>Booking</a></li>
           <li ><a href=""  onClick={props.handleNavbar}><i className="fas fa-shopping-basket"></i></a></li>
           <li ><a href=""  onClick={props.handleNavbar}><i className="fas fa-user"></i></a></li>
@@ -32,7 +32,7 @@ const CollapseMenu = (props) => {
 export default CollapseMenu;
 
 const CollapseWrapper = styled(animated.div)`
-  background: #2d3436;
+  background: black;
   position: fixed;
   top: 5.5rem;
   right: 0;
@@ -50,7 +50,7 @@ const NavLinks = styled.ul`
   & a {
     font-size: 1.4rem;
     line-height: 2;
-    color: #dfe6e9;
+    color: rgb(249, 204, 65);
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
@@ -61,4 +61,3 @@ const NavLinks = styled.ul`
     }
   }
 `;
-

@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './SolarSystem.css';
 import './mediaQueries.css';
-import Mercury from './Planets/Mercury';
-import Venus from './Planets/Venus';
+import './Intro.css'
 
 class SolarSystem extends Component {
     constructor(props) {
@@ -14,6 +13,13 @@ class SolarSystem extends Component {
     render() {
         return (
             <div>
+
+            <div className="starwars-demo">
+                <img src="https://svgshare.com/i/FWY.svg" alt="Star" className="star"/>
+                <img src="https://svgshare.com/i/FXj.svg" alt="Wars" className="wars"/>
+                <h2 className="byline" id="byline"><span>space Travel Agency</span></h2>
+            </div>
+
                 <section>
                     <div className="opening hide-UI view-2D zoom-large data-close controls-close">
 
@@ -72,7 +78,7 @@ class SolarSystem extends Component {
                                     </div>
                                     <div id="jupiter" className="orbit">
                                         <div className="pos">
-                                            <a href="#">  <div className="planet">
+                                            <a href="Jupiter">  <div className="planet">
                                                 <dl className="infos">
                                                     <dt>Jupiter</dt>
                                                     <dd><span></span></dd>
@@ -83,7 +89,7 @@ class SolarSystem extends Component {
                                     </div>
                                     <div id="saturn" className="orbit">
                                         <div className="pos">
-                                            <a href="#"> <div className="planet">
+                                            <a href="Saturne"> <div className="planet">
                                                 <div className="ring"></div>
                                                 <dl className="infos">
                                                     <dt>Saturn</dt>
@@ -95,7 +101,7 @@ class SolarSystem extends Component {
                                     </div>
                                     <div id="uranus" className="orbit">
                                         <div className="pos">
-                                            <a href="#">   <div className="planet">
+                                            <a href="Uranus"> <div className="planet">
                                                 <dl className="infos">
                                                     <dt>Uranus</dt>
                                                     <dd><span></span></dd>
@@ -106,7 +112,7 @@ class SolarSystem extends Component {
                                     </div>
                                     <div id="neptune" className="orbit">
                                         <div className="pos">
-                                            <a href="#">  <div className="planet">
+                                            <a href="Neptune">  <div className="planet">
                                                 <dl className="infos">
                                                     <dt>Neptune</dt>
                                                     <dd><span></span></dd>
