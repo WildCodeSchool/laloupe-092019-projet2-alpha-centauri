@@ -18,7 +18,7 @@ const CollapseMenu = (props) => {
         <NavLinks>
           <li ><a href="/"  onClick={props.handleNavbar}>Home</a></li>
           <li ><a href=""  onClick={props.handleNavbar}>Planets</a></li>
-          <li ><a href=""  onClick={props.handleNavbar}>Spaceship Rentals</a></li>
+          <li ><a href="/RentalList"  onClick={props.handleNavbar}>Spaceship Rentals</a></li>
           <li ><a href=""  onClick={props.handleNavbar}>Booking</a></li>
           <li ><a href=""  onClick={props.handleNavbar}><i className="fas fa-shopping-basket"></i></a></li>
           <li ><a href=""  onClick={props.handleNavbar}><i className="fas fa-user"></i></a></li>
