@@ -10,7 +10,7 @@ class Venus extends Component {
         return ( 
             <div>
 
-            <img className="venus" src="https://www.astro-rennes.com/planetes/images/venus/detail_venus.jpg" alt="Venus" />
+            <img className="venus" src="https://www.astro-rennes.com/planetes/images/venus/detail_venus.jpg" />
             
             <h1 className="color-planets-txt font-size-h1-planets">Venus</h1>
               

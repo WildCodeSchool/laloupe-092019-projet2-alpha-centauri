@@ -1,0 +1,161 @@
+/* 
+
+.row {
+  display: flex;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.liststyle {
+  list-style-type: none;
+}
+
+.line {
+  color: rgb(80, 251, 209);
+  height: 4px;
+  background-color: rgb(80, 251, 209);
+  width: 100%;
+}
+
+.justify-content {
+  justify-content: flex-end;
+}
+
+.line2 {
+  color: rgb(80, 251, 209);
+  height: 4px;
+  background-color: rgb(80, 251, 209);
+  transform: rotate(60deg);
+  width: 120px;
+}
+
+.line3 {
+  color: rgb(80, 251, 209);
+  width: 120px;
+  height: 4px;
+  background-color: rgb(80, 251, 209);
+  transform: rotate(60deg);
+  margin-left: 15px;
+}
+
+.columns {
+  align-items: center;
+}
+
+.height {
+  height: auto;
+}
+
+.nav-height {
+  height: 100px;
+}
+
+.text-deco-none {
+  text-decoration: none;
+}
+
+.font-color {
+  color: rgb(112, 236, 205);
+}
+
+.none {
+  background-color: none;
+}
+
+.background {
+  background-image: url(https://wallpapercave.com/wp/jnmJ9pp.jpg);
+}
+
+@media screen and (max-width: 540px) {
+  .mob-0 {
+    display: none;
+  }
+  .mob-1 {
+    width: 8.33%;
+  }
+  .mob-2 {
+    width: 16.66%;
+  }
+  .mob-3 {
+    width: 25%;
+  }
+  .mob-4 {
+    width: 33.33%;
+  }
+  .mob-5 {
+    width: 41.66%;
+  }
+  .mob-6 {
+    width: 50%;
+  }
+  .mob-7 {
+    width: 58.33%;
+  }
+  .mob-8 {
+    width: 66.66%;
+  }
+  .mob-9 {
+    width: 75%;
+  }
+  .mob-10 {
+    width: 83.33%;
+  }
+  .mob-11 {
+    width: 91.66%;
+  }
+  .mob-12 {
+    width: 100%;
+  }
+
+}
+
+/*Compo Navbar*/
+
+@media screen and (min-width: 541px) and (max-width: 720px) {
+  .tab-0 {
+    display: none;
+  }
+  .tab-1 {
+    width: 8.33%;
+  }
+  .tab-2 {
+    width: 16.66%;
+  }
+  .tab-3 {
+    width: 25%;
+  }
+  .tab-4 {
+    width: 33.33%;
+  }
+  .tab-5 {
+    width: 41.66%;
+  }
+  .tab-6 {
+    width: 50%;
+  }
+  .tab-7 {
+    width: 58.33%;
+  }
+  .tab-8 {
+    width: 66.66%;
+  }
+  .tab-9 {
+    width: 75%;
+  }
+  .tab-10 {
+    width: 83.33%;
+  }
+  .tab-11 {
+    width: 91.66%;
+  }
+  .tab-12 {
+    width: 100%;
+  }
+  .height {
+    height: auto;
+  }
+
+} */
+/*Compo Navbar*/
