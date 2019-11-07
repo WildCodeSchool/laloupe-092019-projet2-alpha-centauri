@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
-
-class Mars extends Component {
+class Jupiter extends Component {
     constructor(props) {
         super(props);
         this.state = {  }
@@ -9,8 +8,8 @@ class Mars extends Component {
     render() { 
         return ( 
             <div>
-                 <img className="mars" src="https://www.astro-rennes.com/planetes/images/mars/detail_mars.jpg"/>
-            <h1 className="color-planets-txt font-size-h1-planets">Mars</h1>
+                   <img className="jupiter" src="https://www.astro-rennes.com/planetes/images/jupiter/detail_jupiter.jpg"/>
+            <h1 className="color-planets-txt font-size-h1-planets">Jupiter</h1>
               
                 <div className="dad-block-txt-mercury">
 
@@ -36,4 +35,4 @@ class Mars extends Component {
     }
 }
  
-export default Mars;
+export default Jupiter;

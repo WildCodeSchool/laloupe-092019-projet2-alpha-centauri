@@ -21,7 +21,7 @@ class Mercury extends Component {
                  
                 <div className="dad-block-txt-mercury">
 
-                    <p className="color-planets-txt block-txt-planets-dsk">
+                    <p className="color-planets-txt style-border-planet-txt">
                         Mercury is the smallest and innermost planet in the Solar System.
                         Its orbit around the Sun takes only 87.97 days,
                         the shortest of all the planets in the Solar System.
@@ -34,7 +34,7 @@ class Mercury extends Component {
                         but is often far more difficult to observe than Venus.
                     </p>
 
-                    <p className="color-planets-txt block-txt-planets-dsk">
+                    <p className="color-planets-txt style-border-planet-txt">
 
                         The planet telescopically displays the complete range of phases, 
                         similar to Venus and the Moon, as it moves in its inner orbit relative to Earth,
@@ -52,7 +52,7 @@ class Mercury extends Component {
                         is only about two-thirds (or 66%) of its distance at aphelion.
                     </p>
 
-                    <p className="color-planets-txt block-txt-planets-dsk">
+                    <p className="color-planets-txt style-border-planet-txt">
                         Mercury's surface pears heavily cratered and is similar in appearance to the Moon's,
                         indicating that it has been geologically inactive for billions of years.
                         Having almost no atmosphere to retain heat, it has surface temperatures that
