@@ -21,7 +21,7 @@ const ListSpaceship = [{
 
 {
     title:'Serenity',
-    description:'Your have an important meeting across the galaxy? Do not worry we have for you Serenity, one of the fastest spaceship in the entire galaxy. no stress on board when you can drink Martini as much as you want!',
+    description:'Your have an important meeting across the galaxy? Do not worry we have Serenity for you, one of the fastest spaceship in the entire galaxy. no stress on board when you can drink Martini as much as you want!',
     image:'https://c4.wallpaperflare.com/wallpaper/372/74/506/serenity-firefly-gray-and-blue-spaceship-wallpaper-preview.jpg',
     price:120000
     

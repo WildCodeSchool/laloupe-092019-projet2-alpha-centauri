@@ -15,7 +15,7 @@ class SolarSystem extends Component {
             <div>
 
             <div className="starwars-demo">
-                <img src="https://svgshare.com/i/FWY.svg" alt="Star" className="star"/>
+                <img src="https://svgshare.com/i/G42.svg" alt="Star" className="star"/>
                 <img src="https://svgshare.com/i/FXj.svg" alt="Wars" className="wars"/>
                 <h2 className="byline" id="byline"><span>space Travel Agency</span></h2>
             </div>

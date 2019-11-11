@@ -21,7 +21,7 @@
   width: 90%;
   height: auto;
   margin: 0 auto;
-  margin-top: 2%;
+  margin-top: 8%;
   margin-bottom: 8%;
   background:  rgba(1, 21, 38, 1);
   padding: 20px 22px;
@@ -194,6 +194,7 @@ color: #A68B03}
     background-color: #f0f8ff !important;
     color: black;
     
+    
   }
 
   .Selectable{
@@ -203,7 +204,7 @@ color: #A68B03}
 
   
 
-.Selectable{background-color: #023859}
+.Selectable{background-color: #023859; }
 
   .Selectable .DayPicker-Day {
     border-radius: 0 !important;

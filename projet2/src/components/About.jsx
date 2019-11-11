@@ -28,7 +28,7 @@ class About extends Component {
     render() { 
         return ( 
             <div>
-            <div className="divspaceabout">
+            <div className="divspacerentals">
             
            
                  <Spring

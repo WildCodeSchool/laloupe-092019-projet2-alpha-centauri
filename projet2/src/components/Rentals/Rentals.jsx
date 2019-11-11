@@ -2,8 +2,6 @@ import React, { useState, useRef, Component } from "react";
 import Accordion from './Accordion'
 import "./Rentals.css";
 
-
-
 class Rentals extends Component {
 constructor(props) {
     super(props);
@@ -11,7 +9,6 @@ constructor(props) {
     };    
 }
   render() {
-
     const {title, price, description, image} = this.props
     return (
       <div className="divspacerentals col">
@@ -35,10 +32,6 @@ constructor(props) {
 
       
       <div><Accordion price={price}/></div>
-
-      
-
-
       </div>
     );
   }

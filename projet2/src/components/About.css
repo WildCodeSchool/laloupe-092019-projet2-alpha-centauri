@@ -14,13 +14,12 @@
   margin-top: 15%;
 }
 
-
 hr.style18 { 
   height: 30px; 
   border-style: solid; 
   width:40%;
   margin-left: 30%;
-  border-color: #8EC127; 
+  border-color: #A68B03; 
   border-width: 3px 0 0 0; 
   border-radius: 20px; 
 } 
@@ -36,8 +35,8 @@ hr.style18:before {
 }
 
 
-.divspaceabout{
-  box-shadow: 0 0 30px rgba(161,204,253,0.55);
+.divspacerentals{
+  box-shadow: 0 0 30px rgba(1, 21, 38, 1);
   color: white;
   border-radius: 20px;
   font-size:20px;
@@ -45,9 +44,9 @@ hr.style18:before {
   width: 90%;
   height: auto;
   margin: 0 auto;
-  margin-top: 2%;
+  margin-top: 8%;
   margin-bottom: 8%;
-  background:  rgba(161,204,253,0.55);
+  background:  rgba(1, 21, 38, 1);
   padding: 20px 22px;
 }
 
@@ -72,7 +71,7 @@ hr.style18:before {
   padding: 0; 
   width: 100%; 
   text-align: center; 
-  color: #8ec127; 
+  color: #A68B03; 
   font-size: 1.5em; 
   font-weight: 800;
   font-family: 'fhspace';

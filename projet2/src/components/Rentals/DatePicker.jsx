@@ -4,16 +4,16 @@ import "react-day-picker/lib/style.css";
 import "./Rentals.css";
 
 export default class DataPicker extends React.Component {
-  static defaultProps = {
-    numberOfMonths: 2
-  };
 
   constructor(props) {
     super(props);
     this.state = {
       width: 0,
       height: 0,
-      daytimesup: 0
+      daytimesup: 0,
+      from:undefined,
+      to:undefined,
+      
     };
     this.handleDayClick = this.handleDayClick.bind(this);
     this.handleResetClick = this.handleResetClick.bind(this);
@@ -22,8 +22,22 @@ export default class DataPicker extends React.Component {
     
   }
 
+
+  componentDidUpdate(prevProps, prevState){
+
+console.log('mis a jour',prevState)
+
+if (prevState.to !== this.state.to){
+console.log("je suis la")
+this.handleChange(this.state.from,this.state.to)
+}
+
+  }
+
   componentDidMount() {
-    this.handleChange( new Date(), new Date());
+    
+    this.handleChange()
+    
     this.updateWindowDimensions();
     window.addEventListener("resize", this.updateWindowDimensions);
   }
@@ -43,25 +57,27 @@ export default class DataPicker extends React.Component {
     }
   };
 
-  // a ignorer truc de la librairie
+  //fait le reset
   getInitialState() {
     return {
       from: undefined,
-      to: undefined
+      to: undefined,
+      daytimesup:0
     };
   }
+
 
   // fonction calcul différence de la date
 
   handleChange = (from, to) => {
     //from et to sont des tableaux d'objet
     // date en format 10/10/2000
-    from=from.toLocaleDateString()
-    to=to.toLocaleDateString()
-    console.log(from)
-    
-    if (typeof(from) !== "undefined" && typeof(to) !== "undefined") {
 
+   
+    if (typeof from !== "undefined" && typeof to !== "undefined" && from !== null && to !== null) {
+      from=from.toLocaleDateString()
+      to=to.toLocaleDateString()
+      console.log('Je dois apparaitre',from)
       // enlève le slash et transforme en tableau
       let fromChange = from.replace(/\//g, " ");
       let tablefrom = fromChange.split(" ");
@@ -82,11 +98,11 @@ export default class DataPicker extends React.Component {
         parseInt(tableto[0])
       );
       const diffDays = Math.round(
-        Math.abs((firstDate - secondDate) / oneDay) + 1
+        Math.abs((firstDate - secondDate) / oneDay)
       );
       console.log("diff of days", diffDays);
 
-      this.setState({ daytimesup: {diffDays}}, () => {console.log(this.state.daytimesup);});
+      this.setState({ daytimesup: diffDays});
     }
   };
 
@@ -100,9 +116,10 @@ export default class DataPicker extends React.Component {
   }
 
   render() {
+    
     const { from, to } = this.state;
     const modifiers = { start: from, end: to };
-    
+    console.log(this.state.daytimesup)
     return (
       <div className="">
         <p className="text_date black center">
@@ -118,6 +135,9 @@ export default class DataPicker extends React.Component {
               Reset
             </button>
           )}
+
+          {this.state.daytimesup}
+          
         </p>
         <DayPicker
           className="Selectable"
@@ -125,7 +145,7 @@ export default class DataPicker extends React.Component {
           selectedDays={[from, { from, to }]}
           modifiers={modifiers}
           onDayClick={this.handleDayClick}
-          onChange={() => this.handleChange(from, to)}
+          onChange={() => this.handleChange(from, to), console.log("res", from, to) }
         />
       </div>
     );
