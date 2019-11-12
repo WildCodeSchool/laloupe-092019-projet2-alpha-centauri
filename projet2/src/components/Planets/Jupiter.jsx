@@ -9,6 +9,7 @@ class Jupiter extends Component {
         return ( 
             <div>
 
+
             <div className="mom-block-img">
 
 
@@ -19,6 +20,7 @@ class Jupiter extends Component {
 
 
 
+
             <h1 className="color-planets-txt font-size-h1-planets">Jupiter</h1>
               
                 <div className="dad-block-txt-mercury">
@@ -26,6 +28,7 @@ class Jupiter extends Component {
                 
 
                     <p className="color-planets-txt style-border-planet-txt">
+
 
                     Jupiter is the fifth planet from the Sun and the largest in the Solar System. 
                     It is a gas giant with a mass one-thousandth that of the Sun, 
@@ -42,10 +45,12 @@ class Jupiter extends Component {
                     but like the other giant planets, Jupiter lacks a well-defined solid surface. 
                     Because of its rapid rotation, the planet's shape is that of an oblate spheroid 
                     (it has a slight but noticeable bulge around the equator). 
+
                     
                     </p>
 
                     <p className="color-planets-txt style-border-planet-txt">
+
 
                     Jupiter's upper atmosphere is about 88–92% hydrogen and 8–12% helium by percent volume 
                     of gas molecules. A helium atom has about four times as much mass as a hydrogen atom, 
@@ -59,11 +64,12 @@ class Jupiter extends Component {
                     roughly 71% hydrogen, 24% helium, and 5% other elements. 
                     Through infrared and ultraviolet measurements, trace amounts of benzene and other 
                     hydrocarbons have also been found.
+
                    
                     </p>
 
                     <p className="color-planets-txt style-border-planet-txt">
-                        
+
                     The temperature and pressure inside Jupiter increase steadily toward the core, 
                     due to the Kelvin–Helmholtz mechanism. At the pressure level of 10 bars (1 MPa), 
                     the temperature is around 340 K (67 °C; 152 °F). 
@@ -72,6 +78,7 @@ class Jupiter extends Component {
                     (9,700 °C; 17,500 °F) and the pressure is 200 GPa. 
                     The temperature at the core boundary is estimated to be 36,000 K 
                     (35,700 °C; 64,300 °F) and the interior pressure is roughly 3,000–4,500 GPa.
+
                                         
                     </p>
 

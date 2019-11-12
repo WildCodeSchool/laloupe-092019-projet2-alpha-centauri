@@ -26,6 +26,7 @@ function App() {
     <div>
 <Router>
     <Open/>
+
     <Switch>
 
     <Route exact path="/" exact component={SolarSystem}/>

@@ -9,6 +9,7 @@ class Neptune extends Component {
         return ( 
             <div>
 
+
             <div className="mom-block-img">
 
             <img className="neptune" src="https://www.astro-rennes.com/planetes/images/neptune/detail_neptune.jpg"/>
@@ -16,12 +17,14 @@ class Neptune extends Component {
             </div>
 
             <h1 className="color-planets-txt font-size-h1-planets">Neptune</h1>
+
               
                 <div className="dad-block-txt-mercury">
 
                 
 
                     <p className="color-planets-txt style-border-planet-txt">
+
 
                     Neptune is the eighth and farthest known planet from the Sun in the Solar System. 
                     In the Solar System, it is the fourth-largest planet by diameter, 
@@ -33,6 +36,7 @@ class Neptune extends Component {
                     of 30.1 au (4.5 billion km; 2.8 billion mi). 
                     It is named after the Roman god of the sea and has the astronomical symbol ♆, 
                     a stylised version of the god Neptune's trident.
+
                     
                     </p>
 
@@ -44,11 +48,12 @@ class Neptune extends Component {
                     However, similar to Uranus, its interior is primarily composed of ices and rock; 
                     Uranus and Neptune are normally considered "ice giants" to emphasise this distinction. 
                     Traces of methane in the outermost regions in part account for the planet's blue appearance.
-                   
+     
                     </p>
 
                     <p className="color-planets-txt style-border-planet-txt">
                         
+
                     These weather patterns are driven by the strongest sustained winds 
                     of any planet in the Solar System, with recorded wind speeds as high as 2,100 km/h 
                     (580 m/s; 1,300 mph). Because of its great distance from the Sun, Neptune's 
@@ -57,6 +62,7 @@ class Neptune extends Component {
                     Temperatures at the planet's centre are approximately 5,400 K (5,100 °C; 9,300 °F).
                     Neptune has a faint and fragmented ring system (labelled "arcs"), 
                     which was discovered in 1984, then later confirmed by Voyager 2.
+
                                         
                     </p>
 

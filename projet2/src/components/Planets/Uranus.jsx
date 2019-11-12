@@ -12,12 +12,14 @@ class Uranus extends Component {
             <div>
 
 
+
             <div className="mom-block-img">
 
                 <img className="uranus" src="https://www.astro-rennes.com/planetes/images/uranus/detail_uranus.jpg"/>
 
             </div>
             
+
             <h1 className="color-planets-txt font-size-h1-planets">Uranus</h1>
               
                 <div className="dad-block-txt-mercury">
@@ -26,6 +28,7 @@ class Uranus extends Component {
 
                     <p className="color-planets-txt style-border-planet-txt">
                     
+
                     Uranus is the seventh planet from the Sun. It has the third-largest planetary 
                     radius and fourth-largest planetary mass in the Solar System. 
                     Uranus is similar in composition to Neptune, and both have bulk chemical 
@@ -56,15 +59,22 @@ class Uranus extends Component {
                     (130 kPa); this represents about 20 to 30 times the carbon abundance 
                     found in the Sun.
 
+
+                    </p>
+
+                    <p className="color-planets-txt style-border-planet-txt">
+
                    
                     </p>
 
                     <p className="color-planets-txt style-border-planet-txt">
                         
+
                     It has the coldest planetary atmosphere in the Solar System, with a minimum 
                     temperature of 49 K (−224 °C; −371 °F), and has a complex, 
                     layered cloud structure with water thought to make up the lowest clouds and methane 
                     the uppermost layer of clouds. The interior of Uranus is mainly composed of ices and rock.
+
                                         
                     </p>
 

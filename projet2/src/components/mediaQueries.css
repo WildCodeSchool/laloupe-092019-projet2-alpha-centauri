@@ -8,6 +8,7 @@
   src: url("./font/Fh_Space.otf")
  }
 
+
 @media screen and (max-width: 540px) {
   .mob-0 {display: none;}
   .mob-1{width:8.33%;}
@@ -199,6 +200,7 @@
   margin-top: 79px;
   height: 700px;
   width: 1000px;
+
   border: 3px rgb(249, 204, 65) solid;
   
 }
@@ -207,6 +209,7 @@
   margin-top: 79px;
   height: 700px;
   width: 1000px;
+
   border: 3px rgb(249, 204, 65) solid;
 }
 
@@ -214,6 +217,7 @@
   margin-top: 79px;
   height: 700px;
   width: 1000px;
+
   border: 3px rgb(249, 204, 65) solid;
 }
 
@@ -246,6 +250,7 @@
   border: 3px rgb(249, 204, 65) solid;
 }
 
+
 .dad-block-txt-mercury{
   display: flex;
   justify-content: space-around;
@@ -264,6 +269,7 @@
   padding: 20px 22px;
  }
 
+
 }
 @media screen and (min-width: 769px){
   .dsk-offset-0{display:none}
@@ -280,4 +286,5 @@
   .dsk-offset-11{margin-left:91.6%}
   .dsk-offset-12{margin-left:100%}
 }
+
 

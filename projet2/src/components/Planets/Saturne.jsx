@@ -8,6 +8,7 @@ class Saturne extends Component {
     render() { 
         return ( 
             <div>
+
                       
             <div className="mom-block-img">
 
@@ -17,12 +18,13 @@ class Saturne extends Component {
 
 
             <h1 className="color-planets-txt font-size-h1-planets">Saturn</h1>
-              
+
                 <div className="dad-block-txt-mercury">
 
                 
 
                     <p className="color-planets-txt style-border-planet-txt">
+
 
                     Saturn is the sixth planet from the Sun and the second-largest in the Solar System, 
                     after Jupiter. It is a gas giant with an average radius about nine times 
@@ -41,11 +43,13 @@ class Saturne extends Component {
                     due to Saturn's larger size. Saturn's magnetic field strength is around 
                     one-twentieth of Jupiter's. The outer atmosphere is generally bland 
                     and lacking in contrast, although long-lived features can appear.
+
                     
                     </p>
 
                     <p className="color-planets-txt style-border-planet-txt">
                    
+
                     The outer atmosphere of Saturn contains 96.3% molecular hydrogen and 3.25% 
                     helium by volume.The proportion of helium is significantly deficient compared 
                     to the abundance of this element in the Sun.
@@ -59,14 +63,17 @@ class Saturne extends Component {
                     The upper clouds are composed of ammonia crystals, while the lower level 
                     clouds appear to consist of either ammonium hydrosulfide (NH4SH) or water.
 
+
                     </p>
 
                     <p className="color-planets-txt style-border-planet-txt">
                         
+
                     Due to its distance from the Sun, Saturn is a rather cold gas giant planet, 
                     with an average temperature of -178 °Celsius. But because of Saturn's tilt, 
                     the southern and northern hemispheres are heated differently, 
                     causing seasonal temperature variation.
+
                                         
                     </p>
 
