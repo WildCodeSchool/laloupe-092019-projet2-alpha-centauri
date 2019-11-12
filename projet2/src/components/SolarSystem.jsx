@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './SolarSystem.css';
 import './mediaQueries.css';
-import Mercury from './Planets/Mercury';
-import Venus from './Planets/Venus';
+import './Intro.css'
 
 class SolarSystem extends Component {
     constructor(props) {
@@ -14,6 +13,13 @@ class SolarSystem extends Component {
     render() {
         return (
             <div>
+
+            <div className="starwars-demo">
+                <img src="https://svgshare.com/i/G42.svg" alt="Star" className="star"/>
+                <img src="https://svgshare.com/i/FXj.svg" alt="Wars" className="wars"/>
+                <h2 className="byline" id="byline"><span>space Travel Agency</span></h2>
+            </div>
+
                 <section>
                     <div className="opening hide-UI view-2D zoom-large data-close controls-close">
 

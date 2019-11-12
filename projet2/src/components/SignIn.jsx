@@ -21,7 +21,7 @@ class Contact_Form extends React.Component{
   }
   render(){
     return(
-      <div className ="container_form dsk-offset-3">
+      <div className ="container_form dsk-offset-4">
         
       <form className = "Contact_Form dsk-offset-1 tab-offset-1 mob-offset-2" onSubmit={event => event.preventDefault()}>
         <h3>Contact Form</h3>

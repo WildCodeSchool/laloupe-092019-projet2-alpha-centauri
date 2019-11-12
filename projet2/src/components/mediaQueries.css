@@ -47,17 +47,18 @@
 .venus{
   margin-top: 76px;
 }
-  
+
 .mars{
   margin-top: 76px;
 }
-  
+
 .jupiter{
   margin-top: 76px;
 }
-  
+
 .saturne{
   margin-top: 76px;
+  
 }
 
 .uranus{
@@ -67,12 +68,10 @@
 .neptune{
   margin-top: 76px;
 }
-  
- 
+
 }
 
 @media screen and (max-width: 540px){
-
   .mob-offset-0{display:none}
   .mob-offset-1{margin-left:8.30%}
   .mob-offset-2{margin-left:16.6%}
@@ -121,7 +120,7 @@
 .venus{
   margin-top: 76px;
 }
-  
+
 .mars{
   margin-top: 76px;
 }
@@ -142,9 +141,7 @@
   margin-top: 76px;
 }
 
-
 }
-
 
 @media screen and (min-width: 541px) and (max-width: 768px){
   .tab-offset-0{display:none}
@@ -194,11 +191,16 @@
   align-content: space-around;
 }
 
+.mom-block-img{
+  display: flex;
+  justify-content: center;
+}
+
 .mercury{
   margin-top: 79px;
   height: 700px;
   width: 1000px;
-  margin-left: 17%;
+
   border: 3px rgb(249, 204, 65) solid;
   
 }
@@ -207,7 +209,7 @@
   margin-top: 79px;
   height: 700px;
   width: 1000px;
-  margin-left: 17%;
+
   border: 3px rgb(249, 204, 65) solid;
 }
 
@@ -215,7 +217,7 @@
   margin-top: 79px;
   height: 700px;
   width: 1000px;
-  margin-left: 17%;
+
   border: 3px rgb(249, 204, 65) solid;
 }
 
@@ -224,7 +226,6 @@
   margin-top: 79px;
   height: 700px;
   width: 1000px;
-  margin-left: 17%;
   border: 3px rgb(249, 204, 65) solid;
 }
 
@@ -232,7 +233,6 @@
   margin-top: 79px;
   height: 700px;
   width: 1000px;
-  margin-left: 17%;
   border: 3px rgb(249, 204, 65) solid;
 }
 
@@ -240,7 +240,6 @@
   margin-top: 79px;
   height: 700px;
   width: 1000px;
-  margin-left: 17%;
   border: 3px rgb(249, 204, 65) solid;
 }
 
@@ -248,10 +247,9 @@
   margin-top: 79px;
   height: 700px;
   width: 1000px;
-  margin-left: 17%;
   border: 3px rgb(249, 204, 65) solid;
 }
-  
+
 
 .dad-block-txt-mercury{
   display: flex;
@@ -267,13 +265,12 @@
   margin: 0 auto;
   margin-top: 2%;
   margin-bottom: 8%;
-  background:  rgba(249, 203, 65, 0.233);
+  background:  rgba(65, 64, 61, 0.335);
   padding: 20px 22px;
  }
 
 
 }
-
 @media screen and (min-width: 769px){
   .dsk-offset-0{display:none}
   .dsk-offset-1{margin-left:8.30%}
@@ -290,10 +287,4 @@
   .dsk-offset-12{margin-left:100%}
 }
 
-
-  
-}
-
-
-}
 

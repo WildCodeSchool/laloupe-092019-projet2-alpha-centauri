@@ -12,7 +12,12 @@ class Mercury extends Component {
     render() {
         return (
             <div>
+
+                <div className="mom-block-img">
+
                 <img className="mercury" src="https://www.astro-rennes.com/planetes/images/mercure/detail_mercure.jpg" />
+
+                </div>
 
                 <div>
 

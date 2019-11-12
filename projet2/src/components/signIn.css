@@ -11,7 +11,7 @@
 h3{
   text-align: center;
   align-items: center;
-  color: yellow;
+  color: #A68B03;
   font-size: 2rem;
   
 }
@@ -19,7 +19,11 @@ h3{
   display: flex;
   justify-items: center;   
   margin-top: 12%;
-  margin-bottom: 10%;
+  margin-bottom: 10%;  
+  border: 3px solid #A68B03;
+  border-radius: 10px;
+  padding: 15px;
+  width: 300px;
   
 }
 .Contact_Form{
@@ -28,17 +32,7 @@ h3{
   justify-content: center;
   
 }
-@media screen and (min-width: 541px) and (max-width: 768px){
-  .Contact_Form{
-    display: flex;
-    flex-direction: column;
-      
-  }
-  .container_form{
-    display: flex;
-    
-  }
-}
+
 @media screen and (min-width: 541px) and (max-width: 768px){
   .Contact_Form{
     display: flex;
@@ -52,20 +46,22 @@ h3{
 }
 
 .inputSign{
-  background-color: rgb(243, 243, 88);
+  background-color: #023859;
   border-radius: 10px;
   padding: 5px 15px;
+  width: 200px;
   
 }
 .buttonSign{
-  background-color: rgb(243, 243, 88);
+  background-color: #A68B03;
+  color: black;
   font-size: 1.5rem;
   border-style: none;
   border-radius: 10px;
   margin-top: 30px;   
 }
 .buttonSign:hover{
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
   
 

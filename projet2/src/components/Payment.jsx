@@ -34,7 +34,7 @@ class Payment extends React.Component{
                         <h2>Payment Form</h2>
                         <div className="div">
                         <label className="labelPay">Firstname
-                             <input className="inputPay"
+                            <input className="inputPay"
                                     type ="text"
                                     value = {this.firstName}
                                     onChange={this.handleFirstNameChange}/>
@@ -42,7 +42,7 @@ class Payment extends React.Component{
                         </div>
                         <div className="div">
                         <label className="labelPay">Lastname
-                             <input className="inputPay"
+                            <input className="inputPay"
                                     type ="text"
                                     value = {this.lastName}
                                     onChange={this.handleLastNameChange}/>
