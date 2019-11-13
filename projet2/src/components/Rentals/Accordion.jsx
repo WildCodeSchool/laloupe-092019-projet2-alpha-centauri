@@ -4,6 +4,7 @@ import "./Rentals.css";
 import DataPicker from "./DatePicker";
 import { connect } from "react-redux";
 import { useDispatch } from 'react-redux'
+import {Link} from 'react-router-dom'
 
 function Accordion(props) {
   const [setActive, setActiveState] = useState("");
@@ -31,6 +32,11 @@ function Accordion(props) {
   }
 
   function handleInsurance(checked){
+
+    let checkbox = !props.checkbox
+    let check = {type: 'check_checkbox', checkbox:checkbox};
+    dispatch(check)
+
     let insurance = (checked) ? 25000 : 0;
     let payload = { type: 'get_insurance', insurance: insurance  };
     dispatch( payload )
@@ -57,17 +63,24 @@ function Accordion(props) {
             <div className="title_money">Insurance</div>
             <div className="Button_insurance">
               <label class="container">
-                <input type="checkbox" onClick={(e) => handleInsurance(e.target.checked)}/>
+                <input type="checkbox" checked={props.checkbox ? "checked": ""} onClick={(e) => handleInsurance(e.target.checked)}/>
                 <span class="checkmark"></span>
               </label>
             </div>
           </div>
           <div className="col">
+            <p className="title_money">Days</p>
+            <p className="black price_tag">{props.days} </p>
+          </div>
+
+          <div className="col">
             <div className="title_money">Price</div>
             <div className="black price_tag">{props.total} Buzz </div>
           </div>
           <div>
-            <button className="button_travel">Travel!</button>
+          <Link to="/Confirmation">
+            <button type='button' className={props.travel ? "button_travelOff"  : "button_travel"  }disabled={props.travel}>Travel!</button>
+            </Link>
           </div>
         </div>
       </div>
@@ -77,7 +90,10 @@ function Accordion(props) {
 
 const mapStateToProps = state => {
   return ({
-      total: state.total
+      total: state.total,
+      days:state.days,
+      checkbox:state.checkbox,
+      travel:state.travel,
   })
 };
 

@@ -182,9 +182,30 @@ color: #A68B03}
     font-size: 1rem;
     cursor: pointer 
     }
-    a.button4:hover{
+    a.button_travel:hover{
     border-color: rgba(255,255,255,1);
     }
+
+
+    .button_travelOff{
+      display:inline-block;
+      padding:0.3em 1.2em;
+      border:0.16em solid rgba(255,255,255,0);
+      border-radius:2em;
+      box-sizing: border-box;
+      text-decoration:none;
+      font-family:'Roboto',sans-serif;
+      font-weight:300;
+      color:#FFFFFF;
+      text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+      text-align:center;
+      transition: all 0.2s;
+      background-color:grey;
+      margin-left: 4%;
+      font-size: 1rem;
+      cursor: not-allowed;
+      }
+      
 
   .blueColor{color:#4A90E2}
 
@@ -280,8 +301,8 @@ color: #A68B03}
     height: 25px;
     width: 25px;
     
-    border: solid black;
-    border-width: 3px 3px 3px 3px;
+    border: solid #A68B03;
+    border-width: 2px;
   }
   
   /* On mouse-over, add a grey background color */
@@ -291,7 +312,7 @@ color: #A68B03}
   
   /* When the checkbox is checked, add a blue background */
   .container input:checked ~ .checkmark {
-    background-color: #2196F3;
+    background-color: #023859;
   }
   
   /* Create the checkmark/indicator (hidden when not checked) */
@@ -312,7 +333,7 @@ color: #A68B03}
     top: 5px;
     width: 5px;
     height: 10px;
-    border: solid black;
+    border: solid #A68B03;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);

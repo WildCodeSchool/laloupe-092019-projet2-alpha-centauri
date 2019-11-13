@@ -1,35 +1,40 @@
 import {
-  GET_NAME,
+  GET_TITLE,
   GET_DEPARTURE,
   GET_ARRIVAL,
   GET_INSURANCE,
   GET_DAYS,
-  GET_TOTAL
+  GET_TOTAL,
+  CHECK_TRAVEL,
+  CHECK_CHECKBOX,
 } from "./ActionTypes";
 
 const STORE = {
-  name: "",
+  title: "",
   arrival: "",
   departure: "",
   insurance: 0,
   days: 0,
   total: 0,
+  travel:true,
+  checkbox:false,
 };
 
 const rootReducer = (state, action) => {
-  let name = STORE.name;
+  let title = STORE.title;
   let arrival = STORE.arrival;
   let departure = STORE.departure;
   let insurance = STORE.insurance;
   let days = STORE.days;
   let total = STORE.total;
-console.log(action, 'state')
 
+  let travel = STORE.travel;
+  let checkbox = STORE.checkbox;
 
   switch (action.type) {
-    case GET_NAME.type:
-      STORE.name = action.name;
-      name = action.name;
+    case GET_TITLE.type:
+      STORE.title = action.title;
+      title = action.title;
       break;
 
     case GET_DEPARTURE.type:
@@ -58,17 +63,34 @@ console.log(action, 'state')
       total = action.total;
       break;
 
+      case CHECK_TRAVEL.type:
+      STORE.travel = action.travel;
+      travel = action.travel;
+      
+      break;
+
+      case CHECK_CHECKBOX.type:
+      STORE.checkbox = action.checkbox;
+      checkbox = action.checkbox;
+      console.log("travel",checkbox)
+      break;
+
+      
+
     default:
       break;
   }
 
   return {
-    name: name,
+    title: title,
     arrival: arrival,
     departure: departure,
     insurance: insurance,
     days: days,
-    total: total
+    total: total,
+    travel:travel,
+    checkbox:checkbox,
+    
   };
 };
 

@@ -50,10 +50,18 @@ class DataPicker extends React.Component {
 
   //fait le reset
   getInitialState() {
+      let days = 0;
+      let nbday = { type: "get_days", days: days };
+      this.props.dispatch(nbday);
+
+    
     return {
       from: undefined,
       to: undefined,
-      daytimesup: 0
+      daytimesup: 0,
+
+      
+
     };
   }
 
@@ -62,6 +70,20 @@ class DataPicker extends React.Component {
   handleChange = (from, to) => {
     //from et to sont des tableaux d'objet
     // date en format 10/10/2000
+
+if (this.state.from === null) {
+
+    let travel= true
+    let trav = { type: "check_travel", travel:travel};
+    this.props.dispatch(trav);
+
+    let checkbox = false
+    let check = {type: 'check_checkbox', checkbox:checkbox};
+    this.props.dispatch(check)
+
+  }
+
+
 
     if (
       typeof from !== "undefined" &&
@@ -114,12 +136,18 @@ class DataPicker extends React.Component {
       let total = this.props.price * diffDays;
       let totalP = { type: "get_total", total: total };
       this.props.dispatch(totalP);
+
+      let travel= false
+      let trav = { type: "check_travel", travel:travel};
+      this.props.dispatch(trav);
     }
   };
 
   handleDayClick(day) {
     const range = DateUtils.addDayToRange(day, this.state);
     this.setState(range);
+
+    
   }
 
   handleResetClick() {
@@ -129,6 +157,15 @@ class DataPicker extends React.Component {
     let totalP = { type: "get_total", total: total };
     this.props.dispatch(totalP);
 
+    let travel = true
+    let trav = { type: "check_travel", travel:travel};
+    this.props.dispatch(trav);
+
+    let checkbox = false
+    let check = {type: 'check_checkbox', checkbox:checkbox};
+    this.props.dispatch(check)
+
+  
   }
 
   render() {
