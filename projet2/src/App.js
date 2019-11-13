@@ -13,13 +13,11 @@ import Jupiter from './components/Planets/Jupiter';
 import Saturne from './components/Planets/Saturne';
 import Uranus from './components/Planets/Uranus';
 import Neptune from './components/Planets/Neptune';
-
-
 import About from './components/About';
-
 import SignIn from './components/SignIn';
 import Table from './components/Table';
 import Payment from './components/Payment';
+import './resetCss.css';
 
 function App() {
   return (
