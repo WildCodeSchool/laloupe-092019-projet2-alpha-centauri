@@ -16,10 +16,11 @@ import Neptune from './components/Planets/Neptune';
 
 
 import About from './components/About';
-
+import Imgday from './components/Imgday';
 import SignIn from './components/SignIn';
 import Table from './components/Table';
 import Payment from './components/Payment';
+
 
 function App() {
   return (
@@ -45,6 +46,8 @@ function App() {
     <Route exact path="/SignIn" exact component={SignIn} />
     <Route exact path="/Table" exact component={Table} />
     <Route exact path="/Payment" exact component={Payment}/>
+    <Route exact path="/Imgday" exact component={Imgday}/>
+
     </Switch>
     <Footer/>
     </Router>

@@ -253,20 +253,18 @@
 
 .dad-block-txt-mercury{
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  width: 75%;
+  margin: auto;
 }
 
 .style-border-planet-txt{
   border-radius: 20px;
   font-size:20px;
   position: relative;
-  width: 90%;
-  height: auto;
-  margin: 0 auto;
-  margin-top: 2%;
-  margin-bottom: 8%;
   background:  rgba(65, 64, 61, 0.335);
   padding: 20px 22px;
+  
  }
 
 
@@ -287,4 +285,21 @@
   .dsk-offset-12{margin-left:100%}
 }
 
+.tilte-img-day{
+  font-size: 20px;
+  margin-top: 5%;
+  color: rgb(249, 204, 65);
+}
 
+.block-img-day{
+  display: flex;
+  justify-content: center;
+}
+
+.img-day{
+  margin-top: 20px;
+  width: 1200px;
+  height: 600px;
+  border-right: 24px solid rgb(19, 17, 19);
+  border-left: 24px solid rgb(19, 17, 19);
+}
