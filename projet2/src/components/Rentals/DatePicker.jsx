@@ -2,42 +2,33 @@ import React from "react";
 import DayPicker, { DateUtils } from "react-day-picker";
 import "react-day-picker/lib/style.css";
 import "./Rentals.css";
+import { connect } from "react-redux";
 
-export default class DataPicker extends React.Component {
-
+class DataPicker extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       width: 0,
       height: 0,
       daytimesup: 0,
-      from:undefined,
-      to:undefined,
-      
+      from: undefined,
+      to: undefined
     };
+    console.log("searching", props);
     this.handleDayClick = this.handleDayClick.bind(this);
     this.handleResetClick = this.handleResetClick.bind(this);
     // this.state = this.getInitialState();
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
-    
   }
 
-
-  componentDidUpdate(prevProps, prevState){
-
-console.log('mis a jour',prevState)
-
-if (prevState.to !== this.state.to){
-console.log("je suis la")
-this.handleChange(this.state.from,this.state.to)
-}
-
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.to !== this.state.to) {
+      this.handleChange(this.state.from, this.state.to);
+    }
   }
 
   componentDidMount() {
-    
-    this.handleChange()
-    
+    this.handleChange();
     this.updateWindowDimensions();
     window.addEventListener("resize", this.updateWindowDimensions);
   }
@@ -47,7 +38,7 @@ this.handleChange(this.state.from,this.state.to)
   updateWindowDimensions() {
     this.setState({ width: window.innerWidth, height: window.innerHeight });
   }
-  
+
   // change le nombre de calendrier en fonction de la taille d'écran
   change = () => {
     if (this.state.width > 670) {
@@ -62,10 +53,9 @@ this.handleChange(this.state.from,this.state.to)
     return {
       from: undefined,
       to: undefined,
-      daytimesup:0
+      daytimesup: 0
     };
   }
-
 
   // fonction calcul différence de la date
 
@@ -73,11 +63,15 @@ this.handleChange(this.state.from,this.state.to)
     //from et to sont des tableaux d'objet
     // date en format 10/10/2000
 
-   
-    if (typeof from !== "undefined" && typeof to !== "undefined" && from !== null && to !== null) {
-      from=from.toLocaleDateString()
-      to=to.toLocaleDateString()
-      console.log('Je dois apparaitre',from)
+    if (
+      typeof from !== "undefined" &&
+      typeof to !== "undefined" &&
+      from !== null &&
+      to !== null
+    ) {
+      from = from.toLocaleDateString();
+      to = to.toLocaleDateString();
+      console.log("Je dois apparaitre", from);
       // enlève le slash et transforme en tableau
       let fromChange = from.replace(/\//g, " ");
       let tablefrom = fromChange.split(" ");
@@ -97,12 +91,29 @@ this.handleChange(this.state.from,this.state.to)
         parseInt(tableto[1]),
         parseInt(tableto[0])
       );
-      const diffDays = Math.round(
-        Math.abs((firstDate - secondDate) / oneDay)
-      );
-      console.log("diff of days", diffDays);
+      const diffDays = Math.round(Math.abs((firstDate - secondDate) / oneDay));
 
-      this.setState({ daytimesup: diffDays});
+      this.setState({ daytimesup: diffDays });
+
+      let departure = from;
+      let bye = { type: "get_departure", departure: departure };
+      this.props.dispatch(bye);
+
+      let arrival = to;
+      let ciao = { type: "get_arrival", arrival: arrival };
+      this.props.dispatch(ciao);
+
+      let days = diffDays;
+      let nbday = { type: "get_days", days: days };
+      this.props.dispatch(nbday);
+
+      let title = this.props.title;
+      let tit = { type: "get_title", title: title };
+      this.props.dispatch(tit);
+
+      let total = this.props.price * diffDays;
+      let totalP = { type: "get_total", total: total };
+      this.props.dispatch(totalP);
     }
   };
 
@@ -113,13 +124,17 @@ this.handleChange(this.state.from,this.state.to)
 
   handleResetClick() {
     this.setState(this.getInitialState());
+
+    let total = 0;
+    let totalP = { type: "get_total", total: total };
+    this.props.dispatch(totalP);
+
   }
 
   render() {
-    
     const { from, to } = this.state;
     const modifiers = { start: from, end: to };
-    console.log(this.state.daytimesup)
+    console.log(this.state.daytimesup);
     return (
       <div className="">
         <p className="text_date black center">
@@ -135,9 +150,6 @@ this.handleChange(this.state.from,this.state.to)
               Reset
             </button>
           )}
-
-          {this.state.daytimesup}
-          
         </p>
         <DayPicker
           className="Selectable"
@@ -145,9 +157,20 @@ this.handleChange(this.state.from,this.state.to)
           selectedDays={[from, { from, to }]}
           modifiers={modifiers}
           onDayClick={this.handleDayClick}
-          onChange={() => this.handleChange(from, to), console.log("res", from, to) }
+          onChange={
+            (() => this.handleChange(from, to), console.log("res", from, to))
+          }
         />
       </div>
     );
   }
 }
+const mapStateToProps = state => {
+  return {
+    arrival: state.arrival,
+    departure: state.departure,
+    total: state.total
+  };
+};
+
+export default connect(mapStateToProps)(DataPicker);
