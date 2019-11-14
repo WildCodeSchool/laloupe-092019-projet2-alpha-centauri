@@ -77,7 +77,7 @@ class Table extends Component {
         return (
             <div>
                 <div className="containerTable mob-0">
-                    <h1 id='title' className="title dsk-offset-2 tab-offset-2">Vacation Packages</h1>
+                    <h1 id='title' className="title dsk-offset-3 tab-offset-2">Vacation Packages</h1>
                     <table id='planets'>
                         <tbody>
                             <th>
@@ -94,7 +94,7 @@ class Table extends Component {
                         </tbody>
                     </table>
                     <a href="./Payment">
-                        <button className="btnDsk dsk-offset-4" type="submit">Confirm</button>
+                        <button className="btnDsk dsk-offset-5 mob-0" type="submit">Confirm</button>
                     </a>
                 </div>
 
@@ -125,17 +125,20 @@ class Table extends Component {
                                                         value={planet.weeks}
                                                         onChange={this.handleChange} />
                                             </p>    
-                                            <p>Total: {planet.total}</p>                                            
-                                        </div>                                        
-                                    </div>
+                                            <p>Total: {planet.total}</p>                                                                                      
+                                        </div>                                                                        
+                                                                       
+                                    </div>    
                                 )
                             }
                         )
                     }
-
-
-
-                </div>
+                                    </div>
+                                    <div>
+                                    <a href="./Payment">
+                                        <button className="btnMobConfirm dsk-0 tab-0 mob-offset-4" type="submit">Confirm</button>
+                                    </a> 
+                                    </div> 
             </div>
         )
     }
