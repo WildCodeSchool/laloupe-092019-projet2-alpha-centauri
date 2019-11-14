@@ -1,6 +1,7 @@
-import React, { useState, useRef, Component } from "react";
+import React, {  Component } from "react";
 import Accordion from './Accordion'
 import "./Rentals.css";
+import { connect } from 'react-redux';
 
 class Rentals extends Component {
 constructor(props) {
@@ -23,6 +24,7 @@ constructor(props) {
           <div className="des-text col dsk-offset-1 dsk-7">
             <div>
               <p className="title_text">{title}</p>
+              <p className="title_text_price ">{price} per day </p>
             </div>
             <div>
               <p className='des_text'>{description}</p>
@@ -31,10 +33,17 @@ constructor(props) {
         </div>
 
       
-      <div><Accordion price={price}/></div>
+      <div><Accordion title={title} price={price}/></div>
       </div>
     );
   }
 }
 
-export default Rentals;
+const mapStateToProps = state => {
+  return ({
+      total:state.total
+  })
+};
+
+
+export default  connect(mapStateToProps)(Rentals)

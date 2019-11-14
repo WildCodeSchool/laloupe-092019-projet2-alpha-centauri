@@ -13,6 +13,10 @@ import Jupiter from './components/Planets/Jupiter';
 import Saturne from './components/Planets/Saturne';
 import Uranus from './components/Planets/Uranus';
 import Neptune from './components/Planets/Neptune';
+
+
+import Confirmation from './components/Rentals/Confirmation'
+
 import About from './components/About';
 
 import Imgday from './components/Imgday';
@@ -42,7 +46,7 @@ function App() {
 
     <Route exact path="/About" exact component={About} /> 
     <Route exact path="/RentalList" exact component ={RentalList} />
-
+    <Route exact path="/Confirmation" exact component ={Confirmation} />
     <Route exact path="/SignIn" exact component={SignIn} />
     <Route exact path="/Table" exact component={Table} />
     <Route exact path="/Payment" exact component={Payment}/>
