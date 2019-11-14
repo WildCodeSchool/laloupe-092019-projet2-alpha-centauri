@@ -20,14 +20,15 @@ class Footer extends Component{
           <footer class="footer">
           <div class="row">
             <div class="myAccount dsk-offset-2 tab-offset-1 mob-offset-1tab-5 mob-6">
-              <ul>Account</ul>
+             
               <li><NavLink activeClassName="active" to="/SignIn">Sign in</NavLink></li>
               <li><NavLink activeClassName="active" to="/Table" >Order status</NavLink></li>
             </div>
             <div class="aboutUs dsk-offset-3 tab-5 mob-6">
-              <ul>About us</ul>
+              
               <li><NavLink activeClassName="active" to="/About"><p>Company</p></NavLink></li>
-              <li>Support</li>
+
+             <li> <NavLink activeClassName="active" to="/Imgday" > Portfolio </NavLink> </li> 
             </div>
             <div class="social dsk-offset-3 tab-5 mob-6">
               <h4>Social</h4>

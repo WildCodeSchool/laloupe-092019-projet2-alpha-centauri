@@ -62,10 +62,6 @@ class Uranus extends Component {
 
                     </p>
 
-                    <p className="color-planets-txt style-border-planet-txt">
-
-                   
-                    </p>
 
                     <p className="color-planets-txt style-border-planet-txt">
                         
