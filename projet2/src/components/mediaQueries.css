@@ -1,290 +1,444 @@
-@font-face{
+@font-face {
   font-family: 'radio space';
   src: url("./font/radiospace.ttf")
- }
+}
 
- @font-face{
+@font-face {
   font-family: 'fhspace';
   src: url("./font/Fh_Space.otf")
- }
-
+}
 
 @media screen and (max-width: 540px) {
-  .mob-0 {display: none;}
-  .mob-1{width:8.33%;}
-  .mob-2{width:16.66%;}
-  .mob-3{width:25%;}
-  .mob-4{width:33.33%;}
-  .mob-5{width:41.66%;}
-  .mob-6{width:50%;}
-  .mob-7{width:58.33%;}
-  .mob-8{width:66.66%;}
-  .mob-9{width:75%;}
-  .mob-10{width:83.33%;}
-  .mob-11{width:91.66%;}
-  .mob-12{width:100%;}
-
-
+  .mob-0 {
+    display: none;
+  }
+  .mob-1 {
+    width: 8.33%;
+  }
+  .mob-2 {
+    width: 16.66%;
+  }
+  .mob-3 {
+    width: 25%;
+  }
+  .mob-4 {
+    width: 33.33%;
+  }
+  .mob-5 {
+    width: 41.66%;
+  }
+  .mob-6 {
+    width: 50%;
+  }
+  .mob-7 {
+    width: 58.33%;
+  }
+  .mob-8 {
+    width: 66.66%;
+  }
+  .mob-9 {
+    width: 75%;
+  }
+  .mob-10 {
+    width: 83.33%;
+  }
+  .mob-11 {
+    width: 91.66%;
+  }
+  .mob-12 {
+    width: 100%;
+  }
   .zoom-large.view-2D .scale-stretched #solar-system {
     font-size: 73%;
-}
-
-#universe{
-  height: 85%;
-  margin-top: 66px;
-}
-
-.dxiZIA {
-  height: 70%;
-  margin: auto 0;
-  width: 85px;
-}
-
-.mercury{
-  margin-top: 76px;
-}
-
-.venus{
-  margin-top: 76px;
-}
-
-.mars{
-  margin-top: 76px;
-}
-
-.jupiter{
-  margin-top: 76px;
-}
-
-.saturne{
-  margin-top: 76px;
+  }
+  #universe {
+    height: 85%;
+    margin-top: 66px;
+  }
+  .dxiZIA {
+    height: 70%;
+    margin: auto 0;
+    width: 85px;
+  }
+  .mercury {
+    margin-top: 76px;
+  }
+  .venus {
+    margin-top: 76px;
+  }
+  .mars {
+    margin-top: 76px;
+  }
+  .jupiter {
+    margin-top: 76px;
+  }
+  .saturne {
+    margin-top: 76px;
+  }
+  .uranus {
+    margin-top: 76px;
+  }
+  .neptune {
+    margin-top: 76px;
+  }
   
+  .tilte-img-day {
+    font-size: 20px;
+    margin-top: 18%;
+    color: rgb(249, 204, 65);
+    text-decoration-line: underline;
+  }
+  .block-img-day {
+    display: flex;
+    justify-content: center;
+  }
+  .img-day {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+  }
 }
 
-.uranus{
-  margin-top: 76px;
+@media screen and (max-width: 540px) {
+  .mob-offset-0 {
+    display: none
+  }
+  .mob-offset-1 {
+    margin-left: 8.30%
+  }
+  .mob-offset-2 {
+    margin-left: 16.6%
+  }
+  .mob-offset-3 {
+    margin-left: 25%
+  }
+  .mob-offset-4 {
+    margin-left: 33.3%
+  }
+  .mob-offset-5 {
+    margin-left: 41.6%
+  }
+  .mob-offset-6 {
+    margin-left: 50%
+  }
+  .mob-offset-7 {
+    margin-left: 58.6%
+  }
+  .mob-offset-8 {
+    margin-left: 67%
+  }
+  .mob-offset-9 {
+    margin-left: 75%
+  }
+  .mob-offset-10 {
+    margin-left: 83.3%
+  }
+  .mob-offset-11 {
+    margin-left: 91.6%
+  }
+  .mob-offset-12 {
+    margin-left: 100%
+  }
 }
 
-.neptune{
-  margin-top: 76px;
-}
-
-}
-
-@media screen and (max-width: 540px){
-  .mob-offset-0{display:none}
-  .mob-offset-1{margin-left:8.30%}
-  .mob-offset-2{margin-left:16.6%}
-  .mob-offset-3{margin-left:25%}
-  .mob-offset-4{margin-left:33.3%}
-  .mob-offset-5{margin-left:41.6%}
-  .mob-offset-6{margin-left:50%}
-  .mob-offset-7{margin-left:58.6%}
-  .mob-offset-8{margin-left:67%}
-  .mob-offset-9{margin-left:75%}
-  .mob-offset-10{margin-left:83.3%}
-  .mob-offset-11{margin-left:91.6%}
-  .mob-offset-12{margin-left:100%}
-}
-
-@media screen and (min-width: 541px) and (max-width: 768px){
-  
-  .tab-0 {display: none;}
-  .tab-1{width:8.33%;}
-  .tab-2{width:16.66%;}
-  .tab-3{width:25%;}
-  .tab-4{width:33.33%;}
-  .tab-5{width:41.66%;}
-  .tab-6{width:50%;}
-  .tab-7{width:58.33%;}
-  .tab-8{width:66.66%;}
-  .tab-9{width:75%;}
-  .tab-10{width:83.33%;}
-  .tab-11{width:91.66%;}
-  .tab-12{width:100%;}
-
+@media screen and (min-width: 541px) and (max-width: 768px) {
+  .tab-0 {
+    display: none;
+  }
+  .tab-1 {
+    width: 8.33%;
+  }
+  .tab-2 {
+    width: 16.66%;
+  }
+  .tab-3 {
+    width: 25%;
+  }
+  .tab-4 {
+    width: 33.33%;
+  }
+  .tab-5 {
+    width: 41.66%;
+  }
+  .tab-6 {
+    width: 50%;
+  }
+  .tab-7 {
+    width: 58.33%;
+  }
+  .tab-8 {
+    width: 66.66%;
+  }
+  .tab-9 {
+    width: 75%;
+  }
+  .tab-10 {
+    width: 83.33%;
+  }
+  .tab-11 {
+    width: 91.66%;
+  }
+  .tab-12 {
+    width: 100%;
+  }
   .zoom-large.view-2D .scale-stretched #solar-system {
     font-size: 62%;
-}
+  }
+  #universe {
+    height: 85%;
+    margin-top: 78px;
+  }
+  .mercury {
+    margin-top: 76px;
+  }
+  .venus {
+    margin-top: 76px;
+  }
+  .mars {
+    margin-top: 76px;
+  }
+  .jupiter {
+    margin-top: 76px;
+  }
+  .saturne {
+    margin-top: 76px;
+  }
+  .uranus {
+    margin-top: 76px;
+  }
+  .neptune {
+    margin-top: 76px;
+  }
+  .tilte-img-day {
+    font-size: 20px;
+    margin-top: 10%;
+    color: rgb(249, 204, 65);
+    text-decoration-line: underline;
+  }
+  .block-img-day {
+    display: flex;
+    justify-content: center;
+  }
+  .img-day {
+    margin-top: 20px;
+    height: 550px;
+  }
 
-#universe{
-  height: 85%;
-  margin-top: 78px;
-}
-
-.mercury{
-  margin-top: 76px;
-}
-
-
-.venus{
-  margin-top: 76px;
-}
-
-.mars{
-  margin-top: 76px;
-}
-
-.jupiter{
-  margin-top: 76px;
-}
-
-.saturne{
-  margin-top: 76px;
-}
-
-.uranus{
-  margin-top: 76px;
-}
-
-.neptune{
-  margin-top: 76px;
-}
-
-}
-
-@media screen and (min-width: 541px) and (max-width: 768px){
-  .tab-offset-0{display:none}
-  .tab-offset-1{margin-left:8.30%}
-  .tab-offset-2{margin-left:16.6%}
-  .tab-offset-3{margin-left:25%}
-  .tab-offset-4{margin-left:33.3%}
-  .tab-offset-5{margin-left:41.6%}
-  .tab-offset-6{margin-left:50%}
-  .tab-offset-7{margin-left:58.6%}
-  .tab-offset-8{margin-left:67%}
-  .tab-offset-9{margin-left:75%}
-  .tab-offset-10{margin-left:83.3%}
-  .tab-offset-11{margin-left:91.6%}
-  .tab-offset-12{margin-left:100%}
-}
-@media screen and (min-width: 769px) {
-  .dsk-0 {display: none;}
-  .dsk-1{width:8.33%;}
-  .dsk-2{width:16.66%;}
-  .dsk-3{width:25%;}
-  .dsk-4{width:33.33%;}
-  .dsk-5{width:41.66%;}
-  .dsk-6{width:50%;}
-  .dsk-7{width:58.33%;}
-  .dsk-8{width:66.66%;}
-  .dsk-9{width:75%;}
-  .dsk-10{width:83.33%;}
-  .dsk-11{width:91.66%;}
-  .dsk-12{width:100%;}
-
-  .zoom-large.view-2D .scale-stretched #solar-system {
-    font-size: 29%;
-}
-
-#universe{
-  height: 82%;
-  margin-top: 78px;
-}
-
-.new-width{
-  width: 75%;
-}
-
-.sc-EHOje {
-  display: flex;
-  align-content: space-around;
-}
-
-.mom-block-img{
-  display: flex;
-  justify-content: center;
-}
-
-.mercury{
-  margin-top: 79px;
-  height: 700px;
-  width: 1000px;
-
-  border: 3px rgb(249, 204, 65) solid;
   
 }
 
-.venus{
-  margin-top: 79px;
-  height: 700px;
-  width: 1000px;
-
-  border: 3px rgb(249, 204, 65) solid;
+@media screen and (min-width: 541px) and (max-width: 768px) {
+  .tab-offset-0 {
+    display: none
+  }
+  .tab-offset-1 {
+    margin-left: 8.30%
+  }
+  .tab-offset-2 {
+    margin-left: 16.6%
+  }
+  .tab-offset-3 {
+    margin-left: 25%
+  }
+  .tab-offset-4 {
+    margin-left: 33.3%
+  }
+  .tab-offset-5 {
+    margin-left: 41.6%
+  }
+  .tab-offset-6 {
+    margin-left: 50%
+  }
+  .tab-offset-7 {
+    margin-left: 58.6%
+  }
+  .tab-offset-8 {
+    margin-left: 67%
+  }
+  .tab-offset-9 {
+    margin-left: 75%
+  }
+  .tab-offset-10 {
+    margin-left: 83.3%
+  }
+  .tab-offset-11 {
+    margin-left: 91.6%
+  }
+  .tab-offset-12 {
+    margin-left: 100%
+  }
 }
 
-.mars{
-  margin-top: 79px;
-  height: 700px;
-  width: 1000px;
-
-  border: 3px rgb(249, 204, 65) solid;
+@media screen and (min-width: 769px) {
+  .dsk-0 {
+    display: none;
+  }
+  .dsk-1 {
+    width: 8.33%;
+  }
+  .dsk-2 {
+    width: 16.66%;
+  }
+  .dsk-3 {
+    width: 25%;
+  }
+  .dsk-4 {
+    width: 33.33%;
+  }
+  .dsk-5 {
+    width: 41.66%;
+  }
+  .dsk-6 {
+    width: 50%;
+  }
+  .dsk-7 {
+    width: 58.33%;
+  }
+  .dsk-8 {
+    width: 66.66%;
+  }
+  .dsk-9 {
+    width: 75%;
+  }
+  .dsk-10 {
+    width: 83.33%;
+  }
+  .dsk-11 {
+    width: 91.66%;
+  }
+  .dsk-12 {
+    width: 100%;
+  }
+  .zoom-large.view-2D .scale-stretched #solar-system {
+    font-size: 29%;
+  }
+  #universe {
+    height: 82%;
+    margin-top: 78px;
+  }
+  .new-width {
+    width: 75%;
+  }
+  .sc-EHOje {
+    display: flex;
+    align-content: space-around;
+  }
+  .mom-block-img {
+    display: flex;
+    justify-content: center;
+  }
+  .mercury {
+    margin-top: 79px;
+    height: 700px;
+    width: 1000px;
+    border: 3px rgb(249, 204, 65) solid;
+  }
+  .venus {
+    margin-top: 79px;
+    height: 700px;
+    width: 1000px;
+    border: 3px rgb(249, 204, 65) solid;
+  }
+  .mars {
+    margin-top: 79px;
+    height: 700px;
+    width: 1000px;
+    border: 3px rgb(249, 204, 65) solid;
+  }
+  .jupiter {
+    margin-top: 79px;
+    height: 700px;
+    width: 1000px;
+    border: 3px rgb(249, 204, 65) solid;
+  }
+  .saturne {
+    margin-top: 79px;
+    height: 700px;
+    width: 1000px;
+    border: 3px rgb(249, 204, 65) solid;
+  }
+  .uranus {
+    margin-top: 79px;
+    height: 700px;
+    width: 1000px;
+    border: 3px rgb(249, 204, 65) solid;
+  }
+  .neptune {
+    margin-top: 79px;
+    height: 700px;
+    width: 1000px;
+    border: 3px rgb(249, 204, 65) solid;
+  }
+  .dad-block-txt-mercury {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+  }
+  .style-border-planet-txt {
+    border-radius: 20px;
+    font-size: 20px;
+    position: relative;
+    background: rgba(65, 64, 61, 0.335);
+    padding: 20px 22px;
+  }
+  .tilte-img-day {
+    font-size: 20px;
+    margin-top: 5%;
+    color: rgb(249, 204, 65);
+    text-decoration-line: underline;
+  }
+  .block-img-day {
+    display: flex;
+    height: 800px;
+    justify-content: center;
+    
+  }
+  .img-day {
+    margin-top: 20px;
+    width: 1100px;
+    height: 700px;
+  }
 }
 
-
-.jupiter{
-  margin-top: 79px;
-  height: 700px;
-  width: 1000px;
-  border: 3px rgb(249, 204, 65) solid;
+@media screen and (min-width: 769px) {
+  .dsk-offset-0 {
+    display: none
+  }
+  .dsk-offset-1 {
+    margin-left: 8.30%
+  }
+  .dsk-offset-2 {
+    margin-left: 16.6%
+  }
+  .dsk-offset-3 {
+    margin-left: 25%
+  }
+  .dsk-offset-4 {
+    margin-left: 33.3%
+  }
+  .dsk-offset-5 {
+    margin-left: 41.6%
+  }
+  .dsk-offset-6 {
+    margin-left: 50%
+  }
+  .dsk-offset-7 {
+    margin-left: 58.6%
+  }
+  .dsk-offset-8 {
+    margin-left: 67%
+  }
+  .dsk-offset-9 {
+    margin-left: 75%
+  }
+  .dsk-offset-10 {
+    margin-left: 83.3%
+  }
+  .dsk-offset-11 {
+    margin-left: 91.6%
+  }
+  .dsk-offset-12 {
+    margin-left: 100%
+  }
 }
-
-.saturne{
-  margin-top: 79px;
-  height: 700px;
-  width: 1000px;
-  border: 3px rgb(249, 204, 65) solid;
-}
-
-.uranus{
-  margin-top: 79px;
-  height: 700px;
-  width: 1000px;
-  border: 3px rgb(249, 204, 65) solid;
-}
-
-.neptune{
-  margin-top: 79px;
-  height: 700px;
-  width: 1000px;
-  border: 3px rgb(249, 204, 65) solid;
-}
-
-
-.dad-block-txt-mercury{
-  display: flex;
-  justify-content: space-around;
-}
-
-.style-border-planet-txt{
-  border-radius: 20px;
-  font-size:20px;
-  position: relative;
-  width: 90%;
-  height: auto;
-  margin: 0 auto;
-  margin-top: 2%;
-  margin-bottom: 8%;
-  background:  rgba(65, 64, 61, 0.335);
-  padding: 20px 22px;
- }
-
-
-}
-@media screen and (min-width: 769px){
-  .dsk-offset-0{display:none}
-  .dsk-offset-1{margin-left:8.30%}
-  .dsk-offset-2{margin-left:16.6%}
-  .dsk-offset-3{margin-left:25%}
-  .dsk-offset-4{margin-left:33.3%}
-  .dsk-offset-5{margin-left:41.6%}
-  .dsk-offset-6{margin-left:50%}
-  .dsk-offset-7{margin-left:58.6%}
-  .dsk-offset-8{margin-left:67%}
-  .dsk-offset-9{margin-left:75%}
-  .dsk-offset-10{margin-left:83.3%}
-  .dsk-offset-11{margin-left:91.6%}
-  .dsk-offset-12{margin-left:100%}
-}
-
-
