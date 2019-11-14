@@ -27,7 +27,13 @@
 li{
   list-style-type: none;
   text-decoration: none;
+  font-size: 1.5rem;
 }
+
+h4{
+  font-size: 1.5rem;
+}
+
 li a{
   text-decoration: none;
   color: #A68B03;
