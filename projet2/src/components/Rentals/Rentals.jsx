@@ -8,7 +8,6 @@ constructor(props) {
     super(props);
     this.state = {
     };    
-    console.log("there",props)
 }
   render() {
     const {title, price, description, image} = this.props
@@ -25,7 +24,7 @@ constructor(props) {
           <div className="des-text col dsk-offset-1 dsk-7">
             <div>
               <p className="title_text">{title}</p>
-              <p className="title_text">{price} Buzz </p>
+              <p className="title_text_price ">{price} per day </p>
             </div>
             <div>
               <p className='des_text'>{description}</p>

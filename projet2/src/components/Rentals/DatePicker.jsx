@@ -125,7 +125,7 @@ if (this.state.from === null) {
       let ciao = { type: "get_arrival", arrival: arrival };
       this.props.dispatch(ciao);
 
-      let days = diffDays;
+      let days = diffDays +1;
       let nbday = { type: "get_days", days: days };
       this.props.dispatch(nbday);
 
@@ -173,21 +173,23 @@ if (this.state.from === null) {
     const modifiers = { start: from, end: to };
     console.log(this.state.daytimesup);
     return (
-      <div className="">
+      <div className="col">
+        <div></div>
         <p className="text_date black center">
           {!from && !to && "Please select the first day."}
           {from && !to && "Please select the last day."}
           {from &&
             to &&
             `Renting from ${from.toLocaleDateString()} to
-        ${to.toLocaleDateString()}`}
+        ${to.toLocaleDateString()}`}</p>
 
+          <div className="centerdiv centerdivdsk ">
           {from && to && (
             <button className="button4" onClick={this.handleResetClick}>
               Reset
             </button>
           )}
-        </p>
+        </div>
         <DayPicker
           className="Selectable"
           numberOfMonths={this.change()}

@@ -3,8 +3,8 @@ import Chevron from "./Chevron";
 import "./Rentals.css";
 import DataPicker from "./DatePicker";
 import { connect } from "react-redux";
-import { useDispatch } from 'react-redux'
-import {Link} from 'react-router-dom'
+import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 
 function Accordion(props) {
   const [setActive, setActiveState] = useState("");
@@ -31,18 +31,17 @@ function Accordion(props) {
     );
   }
 
-  function handleInsurance(checked){
+  function handleInsurance(checked) {
+    let checkbox = !props.checkbox;
+    let check = { type: "check_checkbox", checkbox: checkbox };
+    dispatch(check);
 
-    let checkbox = !props.checkbox
-    let check = {type: 'check_checkbox', checkbox:checkbox};
-    dispatch(check)
-
-    let insurance = (checked) ? 25000 : 0;
-    let payload = { type: 'get_insurance', insurance: insurance  };
-    dispatch( payload )
+    let insurance = checked ? 1250 : 0;
+    let payload = { type: "get_insurance", insurance: insurance };
+    dispatch(payload);
   }
 
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   return (
     <div className="accordion__section">
@@ -55,31 +54,44 @@ function Accordion(props) {
         style={{ maxHeight: `${setHeight}` }}
         className="accordion__content"
       >
-        <div className="centerdiv">
-          <DataPicker price ={price.price}  title ={props.title} />
+        <div className="centerdiv calendardiv ">
+          <DataPicker price={price.price} title={props.title} />
         </div>
-        <div className="container_price row">
-          <div className="col">
+        <div className="rowdsk dsk-12 colmob tab-offset-1 ">
+        <div className="container_price centerdiv row dsk-8 dsk-offset-1 tab-8 tab-offset-1 ">
+          <div className="col dsk-3 tab-3 mrtwo">
             <div className="title_money">Insurance</div>
             <div className="Button_insurance">
               <label class="container">
-                <input type="checkbox" checked={props.checkbox ? "checked": ""} onClick={(e) => handleInsurance(e.target.checked)}/>
+                <input
+                  type="checkbox"
+                  checked={props.checkbox ? "checked" : ""}
+                  onClick={e => handleInsurance(e.target.checked)}
+                />
                 <span class="checkmark"></span>
               </label>
             </div>
           </div>
-          <div className="col">
+          <div className="col dsk-3 tab-2">
             <p className="title_money">Days</p>
             <p className="black price_tag">{props.days} </p>
           </div>
 
-          <div className="col">
+          <div className="col dsk-3 tab-5">
             <div className="title_money">Price</div>
             <div className="black price_tag">{props.total} Buzz </div>
           </div>
-          <div>
-          <Link to="/Confirmation">
-            <button type='button' className={props.travel ? "button_travelOff"  : "button_travel"  }disabled={props.travel}>Travel!</button>
+          
+            </div>
+            <div className="dsk-3 marginbut centerdiv container_button">
+            <Link to="/Confirmation">
+              <button
+                type="button"
+                className={props.travel ? "button_travelOff" : "button_travel"}
+                disabled={props.travel}
+              >
+                Travel!
+              </button>
             </Link>
           </div>
         </div>
@@ -89,12 +101,12 @@ function Accordion(props) {
 }
 
 const mapStateToProps = state => {
-  return ({
-      total: state.total,
-      days:state.days,
-      checkbox:state.checkbox,
-      travel:state.travel,
-  })
+  return {
+    total: state.total,
+    days: state.days,
+    checkbox: state.checkbox,
+    travel: state.travel
+  };
 };
 
-export default connect(mapStateToProps)(Accordion)
+export default connect(mapStateToProps)(Accordion);
